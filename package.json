@@ -1,6 +1,6 @@
 {
   "name": "@gocontractor/gctr-design-system",
-  "version": "0.0.81",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "npm run npm-pack && ng serve",
