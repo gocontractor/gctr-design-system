@@ -1,0 +1,12 @@
+<div class="gctr-modal" [class.is-overlay]="overlay" [ngClass]="size">
+  <div class="gctr-modal-root">
+    <div class="gctr-modal-close" (click)="close.emit()" *ngIf="!hideCloseButton">
+      <gctr-icon icon="close"></gctr-icon>
+    </div>
+    <div class="gctr-modal-content">
+      <div class="flex justify-content-center column full-height">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+</div>

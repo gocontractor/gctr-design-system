@@ -1,0 +1,115 @@
+.customCheckboxColumnClass {
+  flex: 0 1 58px;
+}
+.customExtraCheckboxColumnClass {
+  flex: 0 1 80px;
+  justify-content: center;
+}
+.customMenuColumnClass {
+  flex: 0 1 80px;
+  justify-content: center;
+}
+.show_in_small_screen {
+  display: none;
+}
+.column-input-form-field {
+  width: 100%;
+}
+@media screen and (max-width: 960px) {
+  .block_small_screen {
+    display: block;
+  }
+  .the_checkboxes {
+    margin-bottom: 8px;
+    margin-left: 8px;
+  }
+  .mat-table {
+    border: 0;
+    vertical-align: middle;
+  }
+  .align-right-small-screen {
+    margin-left: auto;
+  }
+
+  .mat-table caption {
+    font-size: 1em;
+  }
+  // Override some default styles for small screen
+  mat-cell:first-of-type,
+  mat-footer-cell:first-of-type,
+  mat-header-cell:first-of-type {
+    padding-left: 0px;
+  }
+  mat-cell:last-of-type,
+  mat-footer-cell:last-of-type,
+  mat-header-cell:last-of-type {
+    padding-right: 0px;
+  }
+  mat-footer-row::after,
+  mat-header-row::after,
+  mat-row::after {
+    min-height: auto;
+  }
+
+  /*  Disable this to show the header
+      */
+  .mat-table .mat-header-cell {
+    border: 10px solid;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .mat-header-row {
+    display: none;
+  }
+  /*   */
+  .mat-table .mat-row {
+    border-bottom: 5px solid #ddd;
+    display: block;
+  }
+  /*
+      .mat-table .mat-row:nth-child(even) {background: #CCC}
+      .mat-table .mat-row:nth-child(odd) {background: #FFF}
+      */
+  .mat-table .mat-cell {
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    text-align: right;
+    height: 30px;
+    margin-bottom: 4%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .mat-table .mat-cell:not(.input-cell):before {
+    /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+    content: attr(data-label);
+    float: left;
+    color: rgba(0, 0, 0, 0.54);
+    // text-transform: uppercase;
+    font-weight: normal;
+
+    font-size: 12px;
+  }
+  .mat-table .mat-cell:last-child {
+    border-bottom: 0;
+  }
+  .mat-table .mat-cell:first-child {
+    margin-top: 4%;
+  }
+  .hide_in_small_screen {
+    display: none;
+  }
+  .show_in_small_screen {
+    display: block;
+  }
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}

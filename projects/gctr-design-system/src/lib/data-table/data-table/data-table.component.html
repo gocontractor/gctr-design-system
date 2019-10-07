@@ -1,0 +1,108 @@
+<mat-table [dataSource]="dataTableSettings.dataSource">
+  <ng-container matColumnDef="checkbox">
+    <mat-header-cell *matHeaderCellDef mat-sort-header [ngClass]="'customCheckboxColumnClass'">
+      <mat-checkbox [checked]="isAllSelected" [indeterminate]="areSomeSelected" (change)="masterCheckboxChange($event)">
+      </mat-checkbox>
+    </mat-header-cell>
+    <mat-cell *matCellDef="let row" [ngClass]="'customCheckboxColumnClass'">
+      <mat-checkbox [checked]="isItemSelected(row)" class="the_checkboxes" (change)="checkboxChange($event, row)">
+      </mat-checkbox>
+      <gctr-button class="show_in_small_screen align-right-small-screen" *ngIf="dataTableSettings.menu"
+        [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert" [disabled]="!dataTableSettings.menu">
+      </gctr-button>
+    </mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="menu">
+    <mat-header-cell *matHeaderCellDef mat-sort-header [ngClass]="'customMenuColumnClass flex justify-content-center'">
+    </mat-header-cell>
+    <mat-cell class="hide_in_small_screen" *matCellDef="let row"
+      [ngClass]="'customMenuColumnClass flex justify-content-center'">
+      <gctr-button [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" [cssClass]="'row-action-button'"
+        icon="more_vert" [disabled]="!dataTableSettings.menu">
+      </gctr-button>
+    </mat-cell>
+  </ng-container>
+  <ng-container *ngFor="let column of dataTableSettings.columnDefinitions; trackBy: trackByColumnName"
+    [matColumnDef]="column.columnName">
+    <mat-header-cell *matHeaderCellDef mat-sort-header
+      [class.customExtraCheckboxColumnClass]="column.mode === 'extra-checkbox'"
+      [ngClass]="smallcreen ? column.customHeaderClassSm : column.customHeaderClassLg">
+      {{ column.title }}
+    </mat-header-cell>
+    <ng-container [ngSwitch]="column.mode">
+      <ng-container *ngSwitchCase="'nested'">
+        <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title"
+          [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
+          (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
+          {{ getNestedValue(column, row) }}
+        </mat-cell>
+      </ng-container>
+      <ng-container *ngSwitchCase="'count'">
+        <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title"
+          [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
+          (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
+          {{ row.cnt }}
+        </mat-cell>
+      </ng-container>
+      <ng-container *ngSwitchCase="'transformer'">
+        <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title"
+          [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
+          (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
+          {{ column.transformer(row) }}
+        </mat-cell>
+      </ng-container>
+      <ng-container *ngSwitchCase="'extra-checkbox'">
+        <mat-cell *matCellDef="let row" class="block_small_screen customExtraCheckboxColumnClass"
+          [attr.data-label]="column.title" [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
+          (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
+          <mat-checkbox [disabled]="column.disableFormField(row)"
+            [checked]="column.checkboxSettings.checkboxChecked(row)"
+            (change)="column.checkboxSettings.checkboxChange($event, row)" class="margin-x-auto"></mat-checkbox>
+        </mat-cell>
+      </ng-container>
+      <ng-container *ngSwitchCase="'list'">
+        <mat-cell *matCellDef="let row" class="block_small_screen"
+          [attr.data-label]="column.title" [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
+          [class.pointer]="column.handleCellClick">
+          <ul>
+            <li *ngFor="let item of column.listAccessor(row)">{{item}}</li>
+          </ul>
+        </mat-cell>
+      </ng-container>
+      <ng-container *ngSwitchCase="'input'">
+        <mat-cell *matCellDef="let row" [attr.data-label]="column.title" class="block_small_screen input-cell"
+          [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
+          (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
+          <mat-form-field class="column-input-form-field" floatLabel="always">
+            <input [disabled]="column.disableFormField(row)" [placeholder]="smallcreen ? column.title : ''" matInput
+              (keyup)="column.inputSettings.inputChange($event, row)" [value]="column.inputSettings.inputValue(row)" />
+          </mat-form-field>
+        </mat-cell>
+      </ng-container>
+      <ng-container *ngSwitchDefault>
+        <mat-cell *matCellDef="let row" class="block_small_screen"
+          [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg" [attr.data-label]="column.title"
+          (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
+          {{ row[column.columnName] }}
+        </mat-cell>
+      </ng-container>
+    </ng-container>
+  </ng-container>
+  <mat-header-row *matHeaderRowDef="dataTableSettings.displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: dataTableSettings.displayedColumns"
+    [class.hover-bgcolor]="!dataTableSettings.hideSelectedRowHighlighting && isRowSelected(row)"
+    [class.pointer]="!!dataTableSettings.clickableRows" (click)="handleRowClick($event, row)"></mat-row>
+</mat-table>
+
+<mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+
+<mat-menu #appMenu="matMenu">
+  <div *ngIf="dataTableSettings.menu">
+    <ng-container *ngFor="let item of dataTableSettings.menu">
+      <button mat-menu-item (click)="item.action(clickedItem)" [disabled]="item.disabled && item.disabled(clickedItem)">
+        <mat-icon>{{ item.icon }}</mat-icon>
+        {{ item.label }}
+      </button>
+    </ng-container>
+  </div>
+</mat-menu>

@@ -1,0 +1,280 @@
+@import "../imports/mixins";
+@import "../imports/variables";
+
+/* Buttons */
+.button {
+  padding: 0 18px;
+  height: 40px;
+  outline: none;
+  border-radius: 100px;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: $letter-spacing;
+
+  /* Stroke Button */
+  &.stroke {
+    padding: 0 16px;
+  }
+
+  /* Main Primary Button */
+  &.main.primary {
+    @include button-main(var(--PMain), $PMain);
+    .mat-ripple-element {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  /* Main Secondary Button */
+  &.main.secondary {
+    @include button-main(var(--SMain), $SMain);
+    .mat-ripple-element {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  /* Stroke Primary Button */
+  &.stroke.primary {
+    @include button-stroke(var(--PMain), $PMain);
+    .mat-ripple-element {
+      background-color: $PMain;
+      background-color: var(--PMain);
+      opacity: 0.1;
+    }
+    &:hover .mat-button-focus-overlay {
+      background-color: $PMain;
+      background-color: var(--PMain);
+      opacity: 0.05;
+    }
+  }
+
+  /* Stroke Secondary Button */
+  &.stroke.secondary {
+    @include button-stroke(var(--SMain), $SMain);
+    .mat-ripple-element {
+      background-color: $SMain;
+      background-color: var(--SMain);
+      opacity: 0.1;
+    }
+    &:hover .mat-button-focus-overlay {
+      background-color: $SMain;
+      background-color: var(--SMain);
+      opacity: 0.04;
+    }
+  }
+
+  /* White Button (background white and shadow) */
+  &.white {
+    background-color: white;
+    @include shadow-btn();
+    &:hover {
+      background-color: white;
+    }
+    &[disabled],
+    &[disabled][disabled],
+    &[disabled]:hover,
+    &[disabled][disabled]:hover {
+      @include shadow-btn();
+    }
+    .mat-ripple-element {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  /* Basic Button (background transparent) */
+  &.basic {
+    background-color: transparent;
+    &.primary {
+      @include button-basic-color(var(--PMain), $PMain, transparent);
+    }
+    &.secondary {
+      @include button-basic-color(var(--SMain), $SMain, transparent);
+    }
+    &:hover {
+      background-color: $Hover;
+      background-color: var(--Hover);
+      box-shadow: none;
+    }
+    &[disabled],
+    &[disabled][disabled] {
+      background-color: transparent;
+      color: $Disable;
+      color: var(--Disable);
+      cursor: default;
+    }
+    .mat-ripple-element {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  /* Single buttons (icon only) */
+  &.single {
+    padding: 0 5px;
+    min-width: 40px;
+    i {
+      margin-right: 0;
+    }
+  }
+
+  /* Float Button */
+  &.float {
+    position: fixed;
+    z-index: 999;
+    bottom: $spacing-big;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    border-radius: 100%;
+    padding: 0;
+    text-align: center;
+    @include shadow-btn();
+    i {
+      font-size: 40px;
+    }
+    @media only screen and (max-width: $media-mobile) {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      margin-left: -20px;
+      i {
+        font-size: 22px;
+      }
+    }
+  }
+
+  /* Float Primary Button */
+  &.float.primary {
+    @include button-main(var(--PMain), $PMain);
+    .mat-ripple-element {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  /* Float Secondary Button */
+  &.float.secondary {
+    @include button-main(var(--SMain), $SMain);
+    .mat-ripple-element {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  /* Float Cancel Button */
+  &.float-cancel {
+    position: fixed;
+    z-index: 999;
+    bottom: $spacing-big;
+    left: 50%;
+    margin-left: -75px;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 100%;
+    padding: 0;
+    text-align: center;
+    background: white;
+    @include shadow-btn();
+    i {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    @media only screen and (max-width: $media-mobile) {
+      margin-left: -60px;
+    }
+  }
+
+  /* Disabled Button */
+  &[disabled],
+  &[disabled][disabled] {
+    border-color: transparent;
+    background-color: $Ripple;
+    background-color: var(--Ripple);
+    color: $Disable;
+    color: var(--Disable);
+    box-shadow: none;
+    pointer-events: none;
+    cursor: default;
+    &:hover {
+      background-color: $Ripple;
+      background-color: var(--Ripple);
+      box-shadow: none;
+    }
+  }
+
+  /* Hide label on mobile screens */
+  &.hide-label-on-mobile {
+    @media only screen and (max-width: $media-mobile) {
+      padding: 0 5px;
+      min-width: 40px;
+      i {
+        margin-right: 0;
+      }
+    }
+  }
+  &.hide-label-on-mobile .button-label {
+    @media only screen and (max-width: $media-mobile) {
+      display: none;
+    }
+  }
+
+  /* Hover effects */
+  &:hover {
+    @include shadow-btn();
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
+  .mat-button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Icon inside button */
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    margin-top: -2px;
+    margin-right: 2px;
+  }
+}
+
+/* Mat Border Radius */
+button[mat-button],
+button[mat-raised-button],
+button[mat-stroked-button],
+button[mat-flat-button] {
+  border-radius: 24px;
+}
+
+/* Mat Box Shadow Standard */
+button[mat-button]:hover,
+button[mat-raised-button]:hover,
+button[mat-stroked-button]:hover,
+button[mat-flat-button]:hover,
+button[mat-mini-fab]:hover {
+  @include shadow-btn();
+}
+
+/* Mat Overlay Transparent*/
+.button[disabled] .mat-button-focus-overlay,
+.button[disabled][disabled] .mat-button-focus-overlay {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* Inputs Min Height */
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input.mat-input-element,
+textarea {
+  min-height: 18px;
+}

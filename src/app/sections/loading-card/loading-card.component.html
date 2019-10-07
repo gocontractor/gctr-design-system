@@ -1,0 +1,9 @@
+<app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'loading-card/loading-card.html'">
+  <gctr-loading-card [isLoading]="simulatedLoading" cssClass="padding-bottom-0">
+    <mat-slide-toggle (change)="slideChange($event)">Simulate Indeterminate Loading</mat-slide-toggle>
+  </gctr-loading-card>
+  <div class="margin-top-32"></div>
+  <gctr-loading-card [isLoading]="simulatedDeterminateLoading" mode="determinate" value="40">
+    <mat-slide-toggle (change)="slideDeterminateChange($event)">Simulate Determinate Loading</mat-slide-toggle>
+  </gctr-loading-card>
+</app-documentation>

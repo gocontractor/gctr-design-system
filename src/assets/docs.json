@@ -1,0 +1,6986 @@
+{
+	"id": 0,
+	"name": "gctr-design-system",
+	"kind": 0,
+	"flags": {},
+	"children": [
+		{
+			"id": 97,
+			"name": "DataColumnMode",
+			"kind": 4,
+			"kindString": "Enumeration",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 102,
+					"name": "checkbox",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-mode.ts",
+							"line": 11,
+							"character": 12
+						}
+					],
+					"defaultValue": "\"extra-checkbox\""
+				},
+				{
+					"id": 98,
+					"name": "count",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-mode.ts",
+							"line": 3,
+							"character": 9
+						}
+					],
+					"defaultValue": "\"count\""
+				},
+				{
+					"id": 103,
+					"name": "input",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-mode.ts",
+							"line": 13,
+							"character": 9
+						}
+					],
+					"defaultValue": "\"input\""
+				},
+				{
+					"id": 104,
+					"name": "list",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-mode.ts",
+							"line": 15,
+							"character": 8
+						}
+					],
+					"defaultValue": "\"list\""
+				},
+				{
+					"id": 101,
+					"name": "menu",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-mode.ts",
+							"line": 9,
+							"character": 8
+						}
+					],
+					"defaultValue": "\"menu\""
+				},
+				{
+					"id": 99,
+					"name": "nested",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-mode.ts",
+							"line": 5,
+							"character": 10
+						}
+					],
+					"defaultValue": "\"nested\""
+				},
+				{
+					"id": 100,
+					"name": "transformer",
+					"kind": 16,
+					"kindString": "Enumeration member",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-mode.ts",
+							"line": 7,
+							"character": 15
+						}
+					],
+					"defaultValue": "\"transformer\""
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumeration members",
+					"kind": 16,
+					"children": [
+						102,
+						98,
+						103,
+						104,
+						101,
+						99,
+						100
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "data-table/models/data-column-mode.ts",
+					"line": 1,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "ActionBarComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-action-bar',\n  templateUrl: './action-bar.component.html',\n  styleUrls: ['./action-bar.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 5,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 6,
+							"name": "new ActionBarComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "ActionBarComponent",
+								"id": 1
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-bar/action-bar.component.ts",
+							"line": 11,
+							"character": 26
+						}
+					]
+				},
+				{
+					"id": 3,
+					"name": "content",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-bar/action-bar.component.ts",
+							"line": 10,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 2,
+					"name": "cssClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-bar/action-bar.component.ts",
+							"line": 9,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 4,
+					"name": "isLoading",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-bar/action-bar.component.ts",
+							"line": 11,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 9,
+					"name": "cssClasses",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 10,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-bar/action-bar.component.ts",
+							"line": 18,
+							"character": 16
+						}
+					]
+				},
+				{
+					"id": 7,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 8,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-bar/action-bar.component.ts",
+							"line": 15,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						5
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						3,
+						2,
+						4
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						9
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						7
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "action-bar/action-bar.component.ts",
+					"line": 8,
+					"character": 31
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 12,
+			"name": "ActionButtonComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-action-button',\n  templateUrl: './action-button.component.html',\n  styleUrls: ['./action-button.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 22,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 23,
+							"name": "new ActionButtonComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "ActionButtonComponent",
+								"id": 12
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 17,
+							"character": 42
+						}
+					]
+				},
+				{
+					"id": 21,
+					"name": "callback",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 17,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter()"
+				},
+				{
+					"id": 18,
+					"name": "cssClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 14,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 20,
+					"name": "disabled",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 16,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 14,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 10,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 16,
+					"name": "iconFont",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 12,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "gctr"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "glyphicon"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome-brand"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome-solid"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-icons"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-outlined"
+							}
+						]
+					},
+					"defaultValue": "\"material-icons\""
+				},
+				{
+					"id": 13,
+					"name": "label",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 9,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 19,
+					"name": "size",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 15,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "small"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "big"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "bigger"
+							}
+						]
+					},
+					"defaultValue": "\"big\""
+				},
+				{
+					"id": 17,
+					"name": "tooltip",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 13,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 15,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 11,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"button\""
+				},
+				{
+					"id": 24,
+					"name": "classes",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 25,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "action-button/action-button.component.ts",
+							"line": 21,
+							"character": 13
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						22
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						21,
+						18,
+						20,
+						14,
+						16,
+						13,
+						19,
+						17,
+						15
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						24
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "action-button/action-button.component.ts",
+					"line": 8,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 42,
+			"name": "ButtonComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 54,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 55,
+							"name": "new ButtonComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "ButtonComponent",
+								"id": 42
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 32,
+							"character": 42
+						}
+					]
+				},
+				{
+					"id": 53,
+					"name": "callback",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Method called when button is clicked"
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 32,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter()"
+				},
+				{
+					"id": 44,
+					"name": "color",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Color palette of the button"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 12,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "primary"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "secondary"
+							}
+						]
+					}
+				},
+				{
+					"id": 49,
+					"name": "cssClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Additional css classes to apply to the button"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 24,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 43,
+					"name": "design",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Design of the button"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 10,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "main"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "stroke"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "basic"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "white"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "float"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "float-cancel"
+							}
+						]
+					},
+					"defaultValue": "\"basic\""
+				},
+				{
+					"id": 51,
+					"name": "disabled",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Disable state of the button"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 28,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 52,
+					"name": "hideLabelOnMobile",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Hide label on mobile screens"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 30,
+							"character": 28
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 47,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Icon name of icon to appear"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 18,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 48,
+					"name": "iconFont",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Icon library to whivh the icon belongs"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 20,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "gctr"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "glyphicon"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome-brand"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome-solid"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-icons"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-outlined"
+							}
+						]
+					},
+					"defaultValue": "\"material-icons\""
+				},
+				{
+					"id": 45,
+					"name": "label",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Text label for the button"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 14,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 50,
+					"name": "tooltip",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Text for the button's tooltip"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 26,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 46,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Type attribute of the button"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 16,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "submit"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "reset"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "button"
+							}
+						]
+					},
+					"defaultValue": "\"submit\""
+				},
+				{
+					"id": 58,
+					"name": "classes",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 59,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "stringLiteral",
+										"value": "main"
+									},
+									{
+										"type": "stringLiteral",
+										"value": "stroke"
+									},
+									{
+										"type": "stringLiteral",
+										"value": "basic"
+									},
+									{
+										"type": "stringLiteral",
+										"value": "white"
+									},
+									{
+										"type": "stringLiteral",
+										"value": "float"
+									},
+									{
+										"type": "stringLiteral",
+										"value": "float-cancel"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 38,
+							"character": 13
+						}
+					]
+				},
+				{
+					"id": 56,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 57,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 36,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						54
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						53,
+						44,
+						49,
+						43,
+						51,
+						52,
+						47,
+						48,
+						45,
+						50,
+						46
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						58
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						56
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "button/button.component.ts",
+					"line": 8,
+					"character": 28
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 61,
+			"name": "CardComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 63,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 64,
+							"name": "new CardComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "CardComponent",
+								"id": 61
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "card/card.component.ts",
+							"line": 9,
+							"character": 33
+						}
+					]
+				},
+				{
+					"id": 62,
+					"name": "cssClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "card/card.component.ts",
+							"line": 9,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						63
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						62
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "card/card.component.ts",
+					"line": 8,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 66,
+			"name": "ContentComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-content',\n  templateUrl: './content.component.html',\n  styleUrls: ['./content.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 68,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 69,
+							"name": "new ContentComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "ContentComponent",
+								"id": 66
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/content/content.component.ts",
+							"line": 9,
+							"character": 28
+						}
+					]
+				},
+				{
+					"id": 67,
+					"name": "cssClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/content/content.component.ts",
+							"line": 9,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 70,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 71,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/content/content.component.ts",
+							"line": 13,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						68
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						67
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						70
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "core-components/content/content.component.ts",
+					"line": 8,
+					"character": 29
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 11,
+			"name": "GctrActionBarModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [ActionBarComponent],\n  exports: [ActionBarComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "action-bar/action-bar.module.ts",
+					"line": 11,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 41,
+			"name": "GctrActionButtonModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [\n    CommonModule,\n    MatTooltipModule,\n    GctrIconModule\n  ],\n  declarations: [ActionButtonComponent],\n  exports: [ActionButtonComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "action-button/action-button.module.ts",
+					"line": 17,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 60,
+			"name": "GctrButtonModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [\n    CommonModule,\n    MatButtonModule,\n    MatTooltipModule,\n    GctrIconModule\n  ],\n  declarations: [ButtonComponent],\n  exports: [ButtonComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "button/button.module.ts",
+					"line": 19,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 65,
+			"name": "GctrCardModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [CardComponent],\n  exports: [CardComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "card/card.module.ts",
+					"line": 11,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 72,
+			"name": "GctrContentModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [ContentComponent],\n  exports: [ContentComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "core-components/content/content.module.ts",
+					"line": 11,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 178,
+			"name": "GctrDataTableComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {
+				"shortText": "If you want to use a checkbox column on the left hand side and a selection model,\nthen pass in the 'checkbox' string as the first element of the displayedColumns array:\n`displayedColumns = ['checkbox', ...rest]`\nYou should also provide a selectionModel in this case\n---------------------------------"
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-data-table',\n  templateUrl: './data-table.component.html',\n  styleUrls: ['./data-table.component.scss']\n}"
+					}
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 179,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"children": [
+				{
+					"id": 192,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 193,
+							"name": "new GctrDataTableComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "GctrDataTableComponent",
+								"id": 178
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 41,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 191,
+					"name": "_itemsShown",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true,
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 41,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "typeParameter",
+							"name": "T"
+						}
+					}
+				},
+				{
+					"id": 182,
+					"name": "_selectionModelValue",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 27,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "SelectionModel",
+						"typeArguments": [
+							{
+								"type": "typeParameter",
+								"name": "T"
+							}
+						]
+					}
+				},
+				{
+					"id": 190,
+					"name": "checkboxes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "ViewChildren",
+							"type": {
+								"type": "reference",
+								"name": "ViewChildren"
+							},
+							"arguments": {
+								"selector": "MatCheckbox"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 40,
+							"character": 39
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "QueryList",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "MatCheckbox"
+							}
+						]
+					}
+				},
+				{
+					"id": 180,
+					"name": "clickedItem",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 23,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "typeParameter",
+						"name": "T"
+					}
+				},
+				{
+					"id": 181,
+					"name": "dataTableSettings",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 25,
+							"character": 28
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "DataTableSettings",
+						"id": 144,
+						"typeArguments": [
+							{
+								"type": "typeParameter",
+								"name": "T"
+							}
+						]
+					}
+				},
+				{
+					"id": 188,
+					"name": "paginator",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "ViewChild",
+							"type": {
+								"type": "reference",
+								"name": "ViewChild"
+							},
+							"arguments": {
+								"selector": "MatPaginator"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 38,
+							"character": 36
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "MatPaginator"
+					}
+				},
+				{
+					"id": 185,
+					"name": "selectionModelChange",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 32,
+							"character": 32
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter()"
+				},
+				{
+					"id": 189,
+					"name": "sort",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "ViewChild",
+							"type": {
+								"type": "reference",
+								"name": "ViewChild"
+							},
+							"arguments": {
+								"selector": "MatSort"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 39,
+							"character": 26
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "MatSort"
+					}
+				},
+				{
+					"id": 204,
+					"name": "areSomeSelected",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 205,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 96,
+							"character": 28
+						}
+					]
+				},
+				{
+					"id": 202,
+					"name": "isAllSelected",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 203,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 93,
+							"character": 26
+						}
+					]
+				},
+				{
+					"id": 183,
+					"name": "selectionModel",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"getSignature": [
+						{
+							"id": 184,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "SelectionModel",
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "T"
+									}
+								]
+							}
+						}
+					],
+					"setSignature": [
+						{
+							"id": 186,
+							"name": "__set",
+							"kind": 1048576,
+							"kindString": "Set signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 187,
+									"name": "val",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "SelectionModel",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "T"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 29,
+							"character": 20
+						},
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 33,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 216,
+					"name": "smallcreen",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 217,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 117,
+							"character": 16
+						}
+					]
+				},
+				{
+					"id": 198,
+					"name": "checkboxChange",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 199,
+							"name": "checkboxChange",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 200,
+									"name": "event",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "MatCheckboxChange"
+									}
+								},
+								{
+									"id": 201,
+									"name": "row",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 85,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 226,
+					"name": "getNestedValue",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 227,
+							"name": "getNestedValue",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 228,
+									"name": "column",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "DataColumnDefinition",
+										"id": 105,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "T"
+											}
+										]
+									}
+								},
+								{
+									"id": 229,
+									"name": "row",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 140,
+							"character": 16
+						}
+					]
+				},
+				{
+					"id": 222,
+					"name": "handleCellClick",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 223,
+							"name": "handleCellClick",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 224,
+									"name": "column",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "DataColumnDefinition",
+										"id": 105,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "T"
+											}
+										]
+									}
+								},
+								{
+									"id": 225,
+									"name": "row",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 135,
+							"character": 24
+						}
+					]
+				},
+				{
+					"id": 218,
+					"name": "handleRowClick",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 219,
+							"name": "handleRowClick",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 220,
+									"name": "event",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Event"
+									}
+								},
+								{
+									"id": 221,
+									"name": "row",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 120,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 206,
+					"name": "isItemSelected",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 207,
+							"name": "isItemSelected",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 208,
+									"name": "row",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 99,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 230,
+					"name": "isRowSelected",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 231,
+							"name": "isRowSelected",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 232,
+									"name": "row",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 150,
+							"character": 15
+						}
+					]
+				},
+				{
+					"id": 209,
+					"name": "masterCheckboxChange",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 210,
+							"name": "masterCheckboxChange",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 211,
+									"name": "event",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "MatCheckboxChange"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 102,
+							"character": 29
+						}
+					]
+				},
+				{
+					"id": 194,
+					"name": "ngAfterViewInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 195,
+							"name": "ngAfterViewInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 43,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 196,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 197,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 53,
+							"character": 10
+						}
+					]
+				},
+				{
+					"id": 212,
+					"name": "trackByColumnName",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 213,
+							"name": "trackByColumnName",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 214,
+									"name": "column",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "DataColumnDefinition",
+										"id": 105,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "T"
+											}
+										]
+									}
+								},
+								{
+									"id": 215,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "data-table/data-table/data-table.component.ts",
+							"line": 114,
+							"character": 26
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						192
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						191,
+						182,
+						190,
+						180,
+						181,
+						188,
+						185,
+						189
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						204,
+						202,
+						183,
+						216
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						198,
+						226,
+						222,
+						218,
+						206,
+						230,
+						209,
+						194,
+						196,
+						212
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "data-table/data-table/data-table.component.ts",
+					"line": 22,
+					"character": 35
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				},
+				{
+					"type": "reference",
+					"name": "AfterViewInit"
+				}
+			]
+		},
+		{
+			"id": 233,
+			"name": "GctrDataTableModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  declarations: [GctrDataTableComponent],\n  imports: [\n    CommonModule,\n    GctrButtonModule,\n    MatIconModule,\n    MatCheckboxModule,\n    MatMenuModule,\n    MatFormFieldModule,\n    MatPaginatorModule,\n    MatTableModule,\n    MatInputModule\n  ],\n  exports: [GctrDataTableComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "data-table/data-table.module.ts",
+					"line": 30,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 90,
+			"name": "GctrHeaderModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [\n    CommonModule,\n    GctrProgressBarModule\n  ],\n  declarations: [HeaderComponent],\n  exports: [HeaderComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "core-components/header/header.module.ts",
+					"line": 15,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 40,
+			"name": "GctrIconModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [CommonModule, MatTooltipModule],\n  declarations: [IconComponent],\n  exports: [IconComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "icon/icon.module.ts",
+					"line": 11,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 247,
+			"name": "GctrLoadingCardModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [CommonModule, GctrCardModule, GctrProgressBarModule],\n  declarations: [LoadingCardComponent],\n  exports: [LoadingCardComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "loading-card/loading-card.module.ts",
+					"line": 14,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 264,
+			"name": "GctrModalModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [CommonModule, GctrIconModule],\n  declarations: [ModalComponent],\n  exports: [ModalComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "modal/modal.module.ts",
+					"line": 12,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 276,
+			"name": "GctrPopoverModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [\n    CommonModule,\n    MdePopoverModule,\n    FormsModule,\n    GctrButtonModule\n  ],\n  declarations: [PopoverComponent],\n  exports: [PopoverComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "popover/popover.module.ts",
+					"line": 18,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 89,
+			"name": "GctrProgressBarModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [ProgressBarComponent],\n  exports: [ProgressBarComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "progress-bar/progress-bar.module.ts",
+					"line": 11,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 292,
+			"name": "GctrRatingModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  declarations: [RatingComponent],\n  imports: [CommonModule, GctrIconModule],\n  exports: [RatingComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "rating/rating.module.ts",
+					"line": 11,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 96,
+			"name": "GctrSidenavModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [SidenavComponent],\n  exports: [SidenavComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "core-components/sidenav/sidenav.module.ts",
+					"line": 11,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 298,
+			"name": "GctrSpinnerModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [MatProgressSpinnerModule],\n  declarations: [SpinnerComponent],\n  exports: [SpinnerComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "spinner/spinner.module.ts",
+					"line": 11,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 73,
+			"name": "HeaderComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 75,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 76,
+							"name": "new HeaderComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "HeaderComponent",
+								"id": 73
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/header/header.component.ts",
+							"line": 9,
+							"character": 30
+						}
+					]
+				},
+				{
+					"id": 74,
+					"name": "isLoading",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/header/header.component.ts",
+							"line": 9,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 77,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 78,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/header/header.component.ts",
+							"line": 12,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						75
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						74
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						77
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "core-components/header/header.component.ts",
+					"line": 8,
+					"character": 28
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 26,
+			"name": "IconComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 32,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 33,
+							"name": "new IconComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "IconComponent",
+								"id": 26
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 15,
+							"character": 24
+						}
+					]
+				},
+				{
+					"id": 30,
+					"name": "cssClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 14,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 27,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 10,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 28,
+					"name": "iconFont",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 11,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "gctr"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "glyphicon"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome-brand"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome-solid"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-icons"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-outlined"
+							}
+						]
+					},
+					"defaultValue": "\"material-icons\""
+				},
+				{
+					"id": 29,
+					"name": "size",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 13,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "smaller"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "small"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "medium"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "big"
+							}
+						]
+					},
+					"defaultValue": "\"small\""
+				},
+				{
+					"id": 31,
+					"name": "tooltip",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 15,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 36,
+					"name": "iconClasses",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 37,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 22,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 38,
+					"name": "showText",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 39,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 52,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 34,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 35,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 20,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						32
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						30,
+						27,
+						28,
+						29,
+						31
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						36,
+						38
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						34
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "icon/icon.component.ts",
+					"line": 9,
+					"character": 26
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 234,
+			"name": "LoadingCardComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-loading-card',\n  templateUrl: './loading-card.component.html',\n  styleUrls: ['./loading-card.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 241,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 242,
+							"name": "new LoadingCardComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "LoadingCardComponent",
+								"id": 234
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "loading-card/loading-card.component.ts",
+							"line": 14,
+							"character": 32
+						}
+					]
+				},
+				{
+					"id": 235,
+					"name": "cssClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "loading-card/loading-card.component.ts",
+							"line": 9,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 236,
+					"name": "internalClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "loading-card/loading-card.component.ts",
+							"line": 10,
+							"character": 24
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 238,
+					"name": "isLoading",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "loading-card/loading-card.component.ts",
+							"line": 12,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 239,
+					"name": "mode",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "loading-card/loading-card.component.ts",
+							"line": 13,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "indeterminate"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "determinate"
+							}
+						]
+					},
+					"defaultValue": "\"indeterminate\""
+				},
+				{
+					"id": 237,
+					"name": "size",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "loading-card/loading-card.component.ts",
+							"line": 11,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "small"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "std"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "medium"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "big"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "full"
+							}
+						]
+					},
+					"defaultValue": "\"std\""
+				},
+				{
+					"id": 240,
+					"name": "value",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "loading-card/loading-card.component.ts",
+							"line": 14,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"defaultValue": " null"
+				},
+				{
+					"id": 245,
+					"name": "classes",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 246,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "loading-card/loading-card.component.ts",
+							"line": 20,
+							"character": 13
+						}
+					]
+				},
+				{
+					"id": 243,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 244,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "loading-card/loading-card.component.ts",
+							"line": 18,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						241
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						235,
+						236,
+						238,
+						239,
+						237,
+						240
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						245
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						243
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "loading-card/loading-card.component.ts",
+					"line": 8,
+					"character": 33
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 248,
+			"name": "ModalComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-modal',\n  templateUrl: './modal.component.html',\n  styleUrls: ['./modal.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 254,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 256,
+							"name": "new ModalComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 257,
+									"name": "router",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Router"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "ModalComponent",
+								"id": 248
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 16,
+							"character": 43
+						}
+					]
+				},
+				{
+					"id": 252,
+					"name": "close",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 15,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter()"
+				},
+				{
+					"id": 250,
+					"name": "hideCloseButton",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 13,
+							"character": 26
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 249,
+					"name": "overlay",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 12,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 255,
+					"name": "router",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true,
+						"isExported": true,
+						"isConstructorProperty": true
+					},
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 18,
+							"character": 28
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Router"
+					}
+				},
+				{
+					"id": 253,
+					"name": "routerSubscription",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true,
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 16,
+							"character": 28
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Subscription"
+					}
+				},
+				{
+					"id": 251,
+					"name": "size",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 14,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "regular"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "full"
+							}
+						]
+					},
+					"defaultValue": "\"regular\""
+				},
+				{
+					"id": 260,
+					"name": "ngOnDestroy",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 261,
+							"name": "ngOnDestroy",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 24,
+							"character": 13
+						}
+					]
+				},
+				{
+					"id": 258,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 259,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 20,
+							"character": 10
+						}
+					]
+				},
+				{
+					"id": 262,
+					"name": "subscribeRouterEvents",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 263,
+							"name": "subscribeRouterEvents",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 28,
+							"character": 31
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						254
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						252,
+						250,
+						249,
+						255,
+						253,
+						251
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						260,
+						258,
+						262
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "modal/modal.component.ts",
+					"line": 11,
+					"character": 27
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				},
+				{
+					"type": "reference",
+					"name": "OnDestroy"
+				}
+			]
+		},
+		{
+			"id": 265,
+			"name": "PopoverComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-popover',\n  templateUrl: './popover.component.html',\n  styleUrls: ['./popover.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 272,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 273,
+							"name": "new PopoverComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "PopoverComponent",
+								"id": 265
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 15,
+							"character": 46
+						}
+					]
+				},
+				{
+					"id": 271,
+					"name": "hideLabelOnMobile",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 15,
+							"character": 28
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 267,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 11,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 268,
+					"name": "iconFont",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 12,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 269,
+					"name": "label",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 13,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 270,
+					"name": "text",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 14,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 266,
+					"name": "triggerOn",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 10,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "click"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "hover"
+							}
+						]
+					},
+					"defaultValue": "\"hover\""
+				},
+				{
+					"id": 274,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 275,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 19,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						272
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						271,
+						267,
+						268,
+						269,
+						270,
+						266
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						274
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "popover/popover.component.ts",
+					"line": 8,
+					"character": 29
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 79,
+			"name": "ProgressBarComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-progress-bar',\n  templateUrl: './progress-bar.component.html',\n  styleUrls: ['./progress-bar.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 83,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 84,
+							"name": "new ProgressBarComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "ProgressBarComponent",
+								"id": 79
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "progress-bar/progress-bar.component.ts",
+							"line": 12,
+							"character": 32
+						}
+					]
+				},
+				{
+					"id": 80,
+					"name": "isLoading",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "progress-bar/progress-bar.component.ts",
+							"line": 9,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 81,
+					"name": "mode",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "progress-bar/progress-bar.component.ts",
+							"line": 10,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "indeterminate"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "determinate"
+							}
+						]
+					},
+					"defaultValue": "\"indeterminate\""
+				},
+				{
+					"id": 82,
+					"name": "value",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Percentage Completed (0 - 100)"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "progress-bar/progress-bar.component.ts",
+							"line": 12,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"defaultValue": " null"
+				},
+				{
+					"id": 87,
+					"name": "width",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 88,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "progress-bar/progress-bar.component.ts",
+							"line": 18,
+							"character": 11
+						}
+					]
+				},
+				{
+					"id": 85,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 86,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "progress-bar/progress-bar.component.ts",
+							"line": 16,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						83
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						80,
+						81,
+						82
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						87
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						85
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "progress-bar/progress-bar.component.ts",
+					"line": 8,
+					"character": 33
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 277,
+			"name": "RatingComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-rating',\n  templateUrl: './rating.component.html',\n  styleUrls: ['./rating.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 283,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 284,
+							"name": "new RatingComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "RatingComponent",
+								"id": 277
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 19,
+							"character": 35
+						}
+					]
+				},
+				{
+					"id": 282,
+					"name": "array",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 19,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Array",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "Number"
+							}
+						]
+					},
+					"defaultValue": " []"
+				},
+				{
+					"id": 281,
+					"name": "callback",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Callback when clickin on a rate star"
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 17,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter<number>()"
+				},
+				{
+					"id": 279,
+					"name": "rate",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Rate value for display rating"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 13,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 280,
+					"name": "readOnly",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Element read only for display rating"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 15,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 278,
+					"name": "total",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Total of stars for rating"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 11,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"defaultValue": "5"
+				},
+				{
+					"id": 289,
+					"name": "chooseRating",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 290,
+							"name": "chooseRating",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 291,
+									"name": "rating",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 34,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 287,
+					"name": "generateArray",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 288,
+							"name": "generateArray",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "Array",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Number"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 27,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 285,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 286,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 23,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						283
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						282,
+						281,
+						279,
+						280,
+						278
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						289,
+						287,
+						285
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "rating/rating.component.ts",
+					"line": 8,
+					"character": 28
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 91,
+			"name": "SidenavComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-sidenav',\n  templateUrl: './sidenav.component.html',\n  styleUrls: ['./sidenav.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 92,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 93,
+							"name": "new SidenavComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "SidenavComponent",
+								"id": 91
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/sidenav/sidenav.component.ts",
+							"line": 8,
+							"character": 49
+						}
+					]
+				},
+				{
+					"id": 94,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 95,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/sidenav/sidenav.component.ts",
+							"line": 12,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						92
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						94
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "core-components/sidenav/sidenav.component.ts",
+					"line": 8,
+					"character": 29
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 293,
+			"name": "SpinnerComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-spinner',\n  templateUrl: './spinner.component.html',\n  styleUrls: ['./spinner.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 294,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 295,
+							"name": "new SpinnerComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "SpinnerComponent",
+								"id": 293
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "spinner/spinner.component.ts",
+							"line": 8,
+							"character": 49
+						}
+					]
+				},
+				{
+					"id": 296,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 297,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "spinner/spinner.component.ts",
+							"line": 12,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						294
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						296
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "spinner/spinner.component.ts",
+					"line": 8,
+					"character": 29
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 156,
+			"name": "DataColumnCheckboxSettings",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 157,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"children": [
+				{
+					"id": 158,
+					"name": "checkboxChange",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 18,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 159,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 160,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 161,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "MatCheckboxChange"
+											}
+										},
+										{
+											"id": 162,
+											"name": "row",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-column-settings.ts",
+									"line": 18,
+									"character": 19
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 163,
+					"name": "checkboxChecked",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 19,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 164,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 165,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 166,
+											"name": "row",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-column-settings.ts",
+									"line": 19,
+									"character": 20
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						158,
+						163
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "data-table/models/data-column-settings.ts",
+					"line": 17,
+					"character": 43
+				}
+			]
+		},
+		{
+			"id": 105,
+			"name": "DataColumnDefinition",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 106,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"children": [
+				{
+					"id": 118,
+					"name": "checkboxSettings",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 16,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "DataColumnCheckboxSettings",
+						"id": 156,
+						"typeArguments": [
+							{
+								"type": "typeParameter",
+								"name": "T"
+							}
+						]
+					}
+				},
+				{
+					"id": 108,
+					"name": "columnName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 8,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 121,
+					"name": "customCellClassLg",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 21,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 123,
+					"name": "customCellClassSm",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 23,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 120,
+					"name": "customHeaderClassLg",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 20,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 122,
+					"name": "customHeaderClassSm",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 22,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 114,
+					"name": "disableFormField",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 14,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 115,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 116,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 117,
+											"name": "row",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-column-definition.ts",
+									"line": 14,
+									"character": 22
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 124,
+					"name": "handleCellClick",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 25,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 125,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 126,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 127,
+											"name": "row",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-column-definition.ts",
+									"line": 25,
+									"character": 21
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 119,
+					"name": "inputSettings",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 18,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "DataColumnInputSettings",
+						"id": 167,
+						"typeArguments": [
+							{
+								"type": "typeParameter",
+								"name": "T"
+							}
+						]
+					}
+				},
+				{
+					"id": 128,
+					"name": "listAccessor",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 27,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 129,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 130,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 131,
+											"name": "row",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									],
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-column-definition.ts",
+									"line": 27,
+									"character": 18
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 113,
+					"name": "mode",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 12,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "DataColumnMode",
+						"id": 97
+					}
+				},
+				{
+					"id": 107,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 6,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 109,
+					"name": "transformer",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-definition.ts",
+							"line": 10,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 110,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 111,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 112,
+											"name": "row",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-column-definition.ts",
+									"line": 10,
+									"character": 17
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						118,
+						108,
+						121,
+						123,
+						120,
+						122,
+						114,
+						124,
+						119,
+						128,
+						113,
+						107,
+						109
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "data-table/models/data-column-definition.ts",
+					"line": 4,
+					"character": 37
+				}
+			]
+		},
+		{
+			"id": 167,
+			"name": "DataColumnInputSettings",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 168,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"children": [
+				{
+					"id": 169,
+					"name": "inputChange",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 22,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 170,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 171,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 172,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "KeyboardEvent"
+											}
+										},
+										{
+											"id": 173,
+											"name": "row",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-column-settings.ts",
+									"line": 22,
+									"character": 16
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 174,
+					"name": "inputValue",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 23,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 175,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 176,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 177,
+											"name": "row",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-column-settings.ts",
+									"line": 23,
+									"character": 15
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						169,
+						174
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "data-table/models/data-column-settings.ts",
+					"line": 21,
+					"character": 40
+				}
+			]
+		},
+		{
+			"id": 132,
+			"name": "DataTableMenuItem",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 133,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"children": [
+				{
+					"id": 140,
+					"name": "action",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-table-menu-item.ts",
+							"line": 5,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 141,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 142,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 143,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isRest": true
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-table-menu-item.ts",
+									"line": 5,
+									"character": 11
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 136,
+					"name": "disabled",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-table-menu-item.ts",
+							"line": 4,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 137,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 138,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 139,
+											"name": "row",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-table-menu-item.ts",
+									"line": 4,
+									"character": 13
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 134,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-table-menu-item.ts",
+							"line": 2,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 135,
+					"name": "label",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-table-menu-item.ts",
+							"line": 3,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						140,
+						136,
+						134,
+						135
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "data-table/models/data-table-menu-item.ts",
+					"line": 1,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 144,
+			"name": "DataTableSettings",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 145,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"children": [
+				{
+					"id": 151,
+					"name": "clickableRows",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 13,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 147,
+					"name": "columnDefinitions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 7,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "DataColumnDefinition",
+							"id": 105,
+							"typeArguments": [
+								{
+									"type": "typeParameter",
+									"name": "T"
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 148,
+					"name": "dataSource",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 8,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "MatTableDataSource",
+						"typeArguments": [
+							{
+								"type": "typeParameter",
+								"name": "T"
+							}
+						]
+					}
+				},
+				{
+					"id": 146,
+					"name": "displayedColumns",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 6,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 152,
+					"name": "handleRowClick",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 14,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 153,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 154,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 155,
+											"name": "row",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "typeParameter",
+												"name": "T"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "data-table/models/data-column-settings.ts",
+									"line": 14,
+									"character": 20
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 150,
+					"name": "hideSelectedRowHighlighting",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 11,
+							"character": 31
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 149,
+					"name": "menu",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "data-table/models/data-column-settings.ts",
+							"line": 9,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "DataTableMenuItem",
+							"id": 132,
+							"typeArguments": [
+								{
+									"type": "typeParameter",
+									"name": "T"
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						151,
+						147,
+						148,
+						146,
+						152,
+						150,
+						149
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "data-table/models/data-column-settings.ts",
+					"line": 5,
+					"character": 34
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Enumerations",
+			"kind": 4,
+			"children": [
+				97
+			]
+		},
+		{
+			"title": "Classes",
+			"kind": 128,
+			"children": [
+				1,
+				12,
+				42,
+				61,
+				66,
+				11,
+				41,
+				60,
+				65,
+				72,
+				178,
+				233,
+				90,
+				40,
+				247,
+				264,
+				276,
+				89,
+				292,
+				96,
+				298,
+				73,
+				26,
+				234,
+				248,
+				265,
+				79,
+				277,
+				91,
+				293
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				156,
+				105,
+				167,
+				132,
+				144
+			]
+		}
+	]
+}

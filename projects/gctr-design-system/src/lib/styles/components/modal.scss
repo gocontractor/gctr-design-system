@@ -1,0 +1,78 @@
+@import "../imports/variables";
+
+/* Is NOT Overlay */
+.gctr-modal {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: auto;
+  .gctr-modal-root {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 48px;
+    @media only screen and (max-width: $media-desktop) {
+      padding: 30px;
+    }
+    @media only screen and (max-width: $media-mobile-small) {
+      padding: 20px;
+    }
+  }
+  .gctr-modal-content {
+    width: 100%;
+    max-width: 1200px;
+  }
+  .gctr-modal-close {
+    display: none;
+  }
+  .gctr-modal-scroll {
+    max-height: calc(100vh - 250px);
+    overflow: auto;
+    padding-right: $spacing;
+  }
+}
+
+/* Is Overlay */
+.gctr-modal.is-overlay {
+  background: $BackgroundDefault;
+  .gctr-modal-close {
+    display: block;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    z-index: 9999;
+    padding: 10px;
+    cursor: pointer;
+    @media only screen and (max-width: $media-desktop) {
+      top: -8px;
+      right: -8px;
+    }
+  }
+}
+
+/* Full size */
+.gctr-modal.full {
+  .gctr-modal-root {
+    padding: 0;
+    @media only screen and (max-width: $media-desktop) {
+      padding: 0;
+    }
+    @media only screen and (max-width: $media-mobile-small) {
+      padding: 0;
+    }
+  }
+  .gctr-modal-content {
+    max-width: 100%;
+  }
+}
+
+/* Overlayer */
+.bgOverlayer {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

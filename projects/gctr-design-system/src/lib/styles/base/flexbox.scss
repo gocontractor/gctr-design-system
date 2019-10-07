@@ -1,0 +1,145 @@
+@import "../imports/variables";
+
+/* Display */
+.flex {
+  display: flex;
+}
+
+.flex-important {
+  display: flex !important;
+}
+
+.flex.column,
+.flex-important.column,
+.flex-justify-align-center.column {
+  flex-direction: column;
+}
+
+.flex.row,
+.flex-important.row,
+.flex-justify-align-center.row {
+  flex-direction: row;
+}
+
+.flex.row-reverse,
+.flex-important.row-reverse,
+.flex-justify-align-center.reverse {
+  flex-direction: row-reverse;
+}
+.flex.wrap,
+.flex-important.wrap,
+.flex-justify-align-center.wrap {
+  flex-wrap: wrap;
+}
+
+/* Flex Grow */
+@for $i from 1 through 10 {
+  .flex-#{$i} {
+    flex: #{$i};
+  }
+  .flex-grow-#{$i} {
+    flex-grow: #{$i};
+  }
+}
+
+.flex-grow {
+  flex: 1;
+}
+
+.flex-grow-99 {
+  flex-grow: 99;
+}
+
+/* Flex Basis */
+.flex-basis-50-pc {
+  flex-basis: 50%;
+}
+
+.flex-basis-100-pc {
+  flex-basis: 100%;
+}
+
+/* Mobile flex columns, wraps and rows */
+@media only screen and (max-width: $media-tablet) {
+  .flex.row-tablet,
+  .flex-important.row-tablet,
+  .flex-justify-align-center.row-tablet {
+    flex-direction: row;
+    & > * {
+      margin: $spacing;
+    }
+  }
+  .flex.column-tablet,
+  .flex-important.column-tablet,
+  .flex-justify-align-center.column-tablet {
+    flex-direction: column;
+    & > * {
+      margin: 0 0 $spacing;
+    }
+  }
+  .flex.wrap-tablet,
+  .flex-important.wrap-tablet,
+  .flex-justify-align-center.wrap-tablet {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: $media-mobile) {
+  .flex.row-mobile,
+  .flex-important.row-mobile,
+  .flex-justify-align-center.row-mobile {
+    flex-direction: row;
+    & > * {
+      margin: $spacing;
+    }
+  }
+  .flex.column-mobile,
+  .flex-important.column-mobile,
+  .flex-justify-align-center.column-mobile {
+    flex-direction: column;
+    & > * {
+      margin: 0 0 $spacing;
+    }
+  }
+  .flex.wrap-mobile,
+  .flex-important.wrap-mobile,
+  .flex-justify-align-center.wrap-mobile {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: $media-mobile-small) {
+  .flex.row-mobile-small,
+  .flex-important.row-mobile-small,
+  .flex-justify-align-center.row-mobile-small {
+    flex-direction: row;
+    & > * {
+      margin: $spacing;
+    }
+  }
+  .flex.column-mobile-small,
+  .flex-important.column-mobile-small,
+  .flex-justify-align-center.column-mobile-small {
+    flex-direction: column;
+    & > * {
+      margin: 0 0 $spacing;
+    }
+  }
+  .flex.wrap-mobile-small,
+  .flex-important.wrap-mobile-small,
+  .flex-justify-align-center.wrap-mobile-small {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .order-1-mobile-small {
+    order: 1;
+  }
+  .order-2-mobile-small {
+    order: 2;
+  }
+  .order-3-mobile-small {
+    order: 3;
+  }
+}

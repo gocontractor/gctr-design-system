@@ -1,0 +1,24 @@
+@import "../imports/variables";
+@import "../imports/placeholder";
+
+.action-bar {
+  @extend %base-card;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $spacing;
+  &.small-padding {
+    padding: $spacing-half;
+  }
+  .action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: auto;
+    max-width: 200px;
+  }
+  .action-button {
+    padding: 0;
+  }
+}

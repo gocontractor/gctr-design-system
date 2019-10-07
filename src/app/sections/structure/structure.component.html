@@ -1,0 +1,40 @@
+<gctr-card>
+
+    <div class="relative">
+        <h1 class="default margin-top-0">Structure</h1>
+        <i class="material-icons pointer absolute top right" (click)="showCode = !showCode">code</i>
+    </div>
+    <p>Main strucure of the page</p>
+    <div id="code" class="margin-top-8" *ngIf="showCode">
+        &lt;gctr-header> &lt;/gctr-header>              <br /> 
+        &lt;gctr-sidenav> &lt;/gctr-sidenav>           <br />
+        &lt;gctr-content>              <br />
+        &nbsp;&nbsp; &lt;gctr-card> &lt;/gctr-card>                  <br />
+        &lt;/gctr-content>
+    </div>
+
+    <h2 class="margin-bottom-0 margin-top-32">Header</h2>
+    <p>Fix head on the top</p>
+    <div id="code" class="margin-top-8" *ngIf="showCode">
+        &lt;gctr-header> &lt;/gctr-header>
+    </div>
+
+    <h2 class="margin-bottom-0 margin-top-32">Sidenav</h2>
+    <p>Left sidenav bar</p>
+    <div id="code" class="margin-top-8" *ngIf="showCode">
+        &lt;gctr-sidenav> &lt;/gctr-sidenav>
+    </div>
+
+    <h2 class="margin-bottom-0 margin-top-32">Content</h2>
+    <p>Internal content</p>
+    <div id="code" class="margin-top-8" *ngIf="showCode">
+        &lt;gctr-content> &lt;/gctr-content>
+    </div>
+
+    <h2 class="margin-bottom-0 margin-top-32">Cards</h2>
+    <p>Cards for internal content</p>
+    <div id="code" class="margin-top-8" *ngIf="showCode">
+        &lt;gctr-card> &lt;/gctr-card>
+    </div>
+
+</gctr-card>

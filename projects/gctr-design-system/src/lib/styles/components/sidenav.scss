@@ -1,0 +1,12 @@
+@import "../imports/variables";
+@import "../imports/mixins";
+
+#gctrSidenav {
+    width: 100vw;
+    max-width: 100%;
+}
+.gctr-sidenav-container {
+    width: 100vw;
+    max-width: 100%;
+    min-height: calc(100vh - #{$header-height});
+}

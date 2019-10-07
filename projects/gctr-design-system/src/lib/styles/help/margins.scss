@@ -1,0 +1,108 @@
+@import "../imports/variables";
+
+/* Standard responsive margins */
+.margin-std {
+  margin: $spacing;
+}
+.margin-minus-std {
+  margin: -$spacing;
+}
+.margin-x-std {
+  margin-left: $spacing;
+  margin-right: $spacing;
+}
+.margin-x-minus-std {
+  margin-left: -$spacing;
+  margin-right: -$spacing;
+}
+.margin-y-std {
+  margin-top: $spacing;
+  margin-bottom: $spacing;
+}
+.margin-y-minus-std {
+  margin-top: -$spacing;
+  margin-bottom: -$spacing;
+}
+.margin-bottom-std {
+  margin-bottom: $spacing;
+}
+.margin-bottom-minus-std {
+  margin-bottom: -$spacing;
+}
+.margin-top-std {
+  margin-top: $spacing;
+}
+.margin-top-minus-std {
+  margin-top: -$spacing;
+}
+.margin-left-std {
+  margin-left: $spacing;
+}
+.margin-left-minus-std {
+  margin-left: -$spacing;
+}
+.margin-right-std {
+  margin-right: $spacing;
+}
+.margin-right-minus-std {
+  margin-right: -$spacing;
+}
+
+/* Margin auto */
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.margin-right-auto {
+  margin-right: auto;
+}
+
+.margin-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-top-auto {
+  margin-top: auto;
+}
+
+.margin-bottom-auto {
+  margin-bottom: auto;
+}
+
+.margin-y-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+/* Margin in internal elements */
+.elements-margin-right > * {
+  margin-right: $spacing; 
+}
+.elements-margin-left > * {
+  margin-left: $spacing; 
+}
+
+/* Margins */
+@for $i from 30 through 0 {
+  .margin-#{$i*2} { margin: #{$i*2}px; }
+  .margin-minus-#{$i*2} { margin: -#{$i*2}px; }
+}
+@for $i from 30 through 0 {
+  .margin-x-#{$i*2} { margin-left: #{$i*2}px; margin-right: #{$i*2}px; }
+  .margin-x-minus-#{$i*2} { margin-left: -#{$i*2}px; margin-right: -#{$i*2}px; }
+  .margin-y-minus-#{$i*2} { margin-top: -#{$i*2}px; margin-bottom: -#{$i*2}px; }
+  .margin-y-#{$i*2} { margin-top: #{$i*2}px; margin-bottom: #{$i*2}px; }
+  .margin-top-#{$i*2} { margin-top: #{$i*2}px; }
+  .margin-top-minus-#{$i*2} { margin-top: -#{$i*2}px; }
+  .margin-bottom-#{$i*2} { margin-bottom: #{$i*2}px; }
+  .margin-bottom-minus-#{$i*2} { margin-bottom: -#{$i*2}px; }
+  .margin-left-#{$i*2} { margin-left: #{$i*2}px; }
+  .margin-left-minus-#{$i*2} { margin-left: -#{$i*2}px; }
+  .margin-right-#{$i*2} { margin-right: #{$i*2}px; }
+  .margin-right-minus-#{$i*2} { margin-right: -#{$i*2}px; }
+}

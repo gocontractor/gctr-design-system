@@ -1,0 +1,76 @@
+@import "../imports/mixins";
+@import "../imports/variables";
+
+/* Wrapp two buttons in the same line */
+.double-field-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .first-field {
+    width: 100%;
+    margin-right: 8px;
+  }
+  .last-field {
+    width: 100%;
+    margin-left: 8px;
+  }
+}
+
+@media only screen and (max-width: $media-mobile-small) {
+  /* Wrapp the two buttons in two lines in mobile */
+  .double-field-wrapper {
+    flex-direction: column;
+    .first-field {
+      margin-right: 0;
+    }
+    .last-field {
+      margin-left: 0;
+    }
+  }
+}
+
+/* Increase size of spinner arrows for input number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: $BackgroundDefault;
+  background-color: var(--BackgroundDefault);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+/* Pointer Events */
+.auto-events-important {
+  pointer-events: auto !important;
+}
+.none-events {
+  pointer-events: none !important;
+}
+
+/* Color fix for disable fields in IOS */
+input:disabled {
+  color: $Disable;
+  -webkit-text-fill-color: $Disable;
+}
+
+/* Color fix for placeholder */
+::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+ color: #bdbdbd;
+}
+
+@media only screen and (max-width: 500px) {
+  .allow-smaller-mat-input .mat-form-field-infix {
+    width: auto;
+  }
+}

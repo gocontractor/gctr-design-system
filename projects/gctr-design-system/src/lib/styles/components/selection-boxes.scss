@@ -1,0 +1,49 @@
+@import "../imports/mixins";
+@import "../imports/variables";
+
+.selection-boxes-holder {
+    align-items: center;
+    margin: auto;
+    position: relative;
+
+    .selection-boxes {
+        height: 210px;
+        width: 210px;
+        margin: $spacing;
+        color: $Grey;
+        color: var(--Grey);
+        cursor: pointer;
+
+        &:hover, &:active, &:focus {
+            background-color: $Hover;
+            background-color: var(--Hover);
+            @include shadow-btn();            
+        }
+    }
+    
+    .selection-boxes div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .selectionIconSVG,
+    .selectionIconInline,
+    .icon-plus {
+        width: 100%;
+        height: auto;
+        font-size: 82px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: $media-mobile-small) {
+    .selection-boxes-holder.flex.row  {
+        flex-direction: column;
+    }
+}

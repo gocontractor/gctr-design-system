@@ -1,0 +1,11 @@
+<app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'progress-bar.html'">
+  <p>Progress bar indeterminate mode</p>
+  <div class="max-width-300">
+    <gctr-progress-bar [isLoading]="true"></gctr-progress-bar>
+  </div>
+  <br><br>
+  <p>Progress bar determinate mode in <input type="number" max="100" min="0" [(ngModel)]="value" />%</p>
+  <div class="max-width-300">
+    <gctr-progress-bar [isLoading]="true" [mode]="'determinate'" [value]="value"></gctr-progress-bar>
+  </div>
+</app-documentation>

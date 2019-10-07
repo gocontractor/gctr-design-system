@@ -1,0 +1,159 @@
+<gctr-card classes="grid relative">
+    <gctr-icon icon="code" class="pointer absolute top-16 right-16" (click)="showCode = !showCode">code
+    </gctr-icon>
+    <h1 class="default margin-top-0">Grid</h1>
+    <p class="margin-top-0 default">Responsive grid system with up to 5 columns using only CSS display grid.</p>
+
+    <div class="gctr-grid two-columns">
+        <div class="gctr-grid-row">column 1</div>
+        <div class="gctr-grid-row">column 2</div>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <div class="gctr-grid two-columns">
+                <div class="gctr-grid-row">column 1</div>
+                <div class="gctr-grid-row">column 2</div>
+            </div>
+            ```
+        </markdown>
+    </div>
+
+    <div class="gctr-grid three-columns">
+        <div class="gctr-grid-row">column 1</div>
+        <div class="gctr-grid-row">column 2</div>
+        <div class="gctr-grid-row">column 3</div>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <div class="gctr-grid three-columns">
+                <div class="gctr-grid-row">column 1</div>
+                <div class="gctr-grid-row">column 2</div>
+                <div class="gctr-grid-row">column 3</div>
+            </div>
+            ```
+        </markdown>
+    </div>
+
+    <div class="gctr-grid four-columns">
+        <div class="gctr-grid-row">column 1</div>
+        <div class="gctr-grid-row">column 2</div>
+        <div class="gctr-grid-row">column 3</div>
+        <div class="gctr-grid-row">column 4</div>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <div class="gctr-grid four-columns">
+                <div class="gctr-grid-row">column 1</div>
+                <div class="gctr-grid-row">column 2</div>
+                <div class="gctr-grid-row">column 3</div>
+                <div class="gctr-grid-row">column 4</div>
+            </div>
+            ```
+        </markdown>
+    </div>
+
+    <div class="gctr-grid five-columns">
+        <div class="gctr-grid-row">column 1</div>
+        <div class="gctr-grid-row">column 2</div>
+        <div class="gctr-grid-row">column 3</div>
+        <div class="gctr-grid-row">column 4</div>
+        <div class="gctr-grid-row">column 5</div>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <div class="gctr-grid five-columns">
+                <div class="gctr-grid-row">column 1</div>
+                <div class="gctr-grid-row">column 2</div>
+                <div class="gctr-grid-row">column 3</div>
+                <div class="gctr-grid-row">column 4</div>
+                <div class="gctr-grid-row">column 5</div>
+            </div>
+            ```
+        </markdown>
+    </div>
+
+    <div class="gctr-grid one-three-columns">
+        <div class="gctr-grid-row">column 1</div>
+        <div class="gctr-grid-row">column 2</div>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <div class="gctr-grid one-three-columns">
+                <div class="gctr-grid-row">column 1</div>
+                <div class="gctr-grid-row">column 2</div>
+            </div>
+            ```
+        </markdown>
+    </div>
+
+    <div class="gctr-grid three-one-columns">
+        <div class="gctr-grid-row">column 1</div>
+        <div class="gctr-grid-row">column 2</div>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <div class="gctr-grid three-one-columns">
+                <div class="gctr-grid-row">column 1</div>
+                <div class="gctr-grid-row">column 2</div>
+            </div>
+            ```
+        </markdown>
+    </div>
+
+    <div class="gctr-grid three-one-one-columns">
+        <div class="gctr-grid-row">column 1</div>
+        <div class="gctr-grid-row">column 2</div>
+        <div class="gctr-grid-row">column 3</div>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <div class="gctr-grid three-one-one-columns">
+                <div class="gctr-grid-row">column 1</div>
+                <div class="gctr-grid-row">column 2</div>
+                <div class="gctr-grid-row">column 3</div>
+            </div>
+            ```
+        </markdown>
+    </div>
+
+    <br><br>
+
+    <h2 class="default">Grid</h2>
+    <p class="margin-top-0 default">Responsive flex grid system with minimum width of 120 and dynamical lines.</p>
+
+    <div class="auto-column-container-120">
+        <gctr-card cssClass="full-height">
+            <div class="flex-justify-align-center text-center full-height">
+                <mat-label>Column 1</mat-label>
+            </div>
+        </gctr-card>
+        <gctr-card cssClass="full-height">
+            <div class="flex-justify-align-center text-center full-height">
+                <mat-label>Column 2</mat-label>
+            </div>
+        </gctr-card>
+        <gctr-card cssClass="full-height">
+            <div class="flex-justify-align-center text-center full-height">
+                <mat-label>Column 3</mat-label>
+            </div>
+        </gctr-card>
+        <gctr-card cssClass="full-height">
+            <div class="flex-justify-align-center text-center full-height">
+                <mat-label>Column 4</mat-label>
+            </div>
+        </gctr-card>
+        <gctr-card cssClass="full-height">
+            <div class="flex-justify-align-center text-center full-height">
+                <mat-label>Column 5</mat-label>
+            </div>
+        </gctr-card>
+    </div>
+
+</gctr-card>

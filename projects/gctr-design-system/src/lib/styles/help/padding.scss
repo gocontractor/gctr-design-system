@@ -1,0 +1,57 @@
+@import "../imports/variables";
+
+/* Padding options 0/4/8/12/16/20/24/28/32/36/40/44/46/50 */
+@for $i from 15 through 0 {
+  .padding-#{$i*4} { padding: #{$i*4}px; }
+}
+@for $i from 15 through 0 {
+  .padding-#{$i*4} { padding: #{$i*4}px; }
+  .padding-x-#{$i*4} { padding-left: #{$i*4}px; padding-right: #{$i*4}px; }
+  .padding-y-#{$i*4} { padding-top: #{$i*4}px; padding-bottom: #{$i*4}px; }
+  .padding-top-#{$i*4} { padding-top: #{$i*4}px; }
+  .padding-bottom-#{$i*4} { padding-bottom: #{$i*4}px; }
+  .padding-left-#{$i*4} { padding-left: #{$i*4}px; }
+  .padding-right-#{$i*4} { padding-right: #{$i*4}px; }
+}
+
+/* Standard responsive padding */
+.padding-std {
+  padding: $spacing;
+}
+.padding-x-std {
+  padding-left: $spacing;
+  padding-right: $spacing;
+}
+.padding-y-std {
+  padding-bottom: $spacing;
+  padding-top: $spacing;
+}
+.padding-bottom-std {
+  padding-bottom: $spacing;
+}
+.padding-top-std {
+  padding-top: $spacing;
+}
+.padding-left-std {
+  padding-left: $spacing;
+}
+.padding-right-std {
+  padding-right: $spacing;
+}
+
+/* Responsive Calculated */
+.responsivePadding8to24 {
+  padding: calc( 8px + (24 - 8)*(100vw - 320px) / (1300 - 320) );
+}
+
+@media only screen and (max-width: 500px) {
+  .padding-0-mobile-small {
+    padding: 0;
+  }
+  .padding-bottom-0-mobile-small {
+    padding-bottom: 0;
+  }
+  .padding-top-0-mobile-small {
+    padding-top: 0;
+  }
+}

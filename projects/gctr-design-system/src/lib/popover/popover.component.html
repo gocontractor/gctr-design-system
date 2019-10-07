@@ -1,0 +1,14 @@
+<gctr-button
+  #popoverTrigger="mdePopoverTrigger"
+  [mdePopoverTriggerFor]="appPopover"
+  [mdePopoverTriggerOn]="triggerOn"
+  [hideLabelOnMobile]="hideLabelOnMobile"
+  [type]="'button'"
+  [icon]="icon"
+  [iconFont]="iconFont"
+  [label]="label"
+></gctr-button>
+
+<mde-popover #appPopover="mdePopover" [mdePopoverOverlapTrigger]="false">
+  <div [innerHTML]="text"></div>
+</mde-popover>

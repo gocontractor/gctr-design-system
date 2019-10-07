@@ -1,0 +1,113 @@
+@import '../imports/variables';
+
+* {
+  font-family: 'proxima-nova', sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {  
+  font-size: 14px;
+  font-size: 1rem;
+  letter-spacing: $letter-spacing;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: $spacing;
+  cursor: default;
+}
+
+p,
+li {
+  font-size: 14px;
+}
+
+/* Font-size options 8/12/.../100 */
+@for $i from 2 through 50 {
+    .text#{$i*2} {
+      font-size: #{$i * 2}px;
+  }
+}
+
+/* Styles */
+.bold, .bold-hover:hover {
+  font-weight: bold;
+}
+
+.bolder, .bolder-hover:hover {
+  font-weight: bolder;
+}
+
+.nobold, .nobold-hover:hover {
+  font-weight: normal;
+}
+
+.italic, .italic-hover:hover {
+  font-style: italic;
+}
+
+.noitalic, .noitalic-hover:hover {
+  font-style: normal;
+}
+
+.underline, .underline-hover:hover  {
+  text-decoration: underline;
+}
+
+.nounderline, .nounderline-hover:hover {
+  text-decoration: none;
+}
+
+.uppercase, .uppercase-hover:hover {
+  text-transform: uppercase;
+}
+
+.lowercase, .lowercase-hover:hover {
+  text-transform: lowercase;
+}
+
+.break-word {
+  word-break: break-word;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.break-newlines {
+  white-space: pre-line;
+}
+
+.first-letter-capital::first-letter {
+  text-transform: uppercase;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.line-height-35 {
+  line-height: 35px;
+}
+
+.line-height-45 {
+  line-height: 45px;
+}

@@ -1,0 +1,18 @@
+@import "../imports/variables";
+@import "../imports/placeholder";
+
+.gctr-card {
+    @extend %base-card;
+}
+
+.gctr-card.dashed {
+    @extend %base-card;
+    display: flex;
+    align-items: center;
+    border: 1px dashed $Ripple;
+    background-color: $BackgroundDefault;
+    background-color: var(--BackgroundDefault);
+    color: $Grey;
+    color: var(--Grey);
+    box-shadow: none;
+}

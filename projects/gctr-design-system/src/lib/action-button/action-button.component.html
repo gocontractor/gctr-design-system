@@ -1,0 +1,14 @@
+<button 
+  class="action-button ripple"
+  [ngClass]="classes"
+  [type]="type"
+  [matTooltip]="tooltip"
+  [disabled]="disabled"
+  (click)="callback.emit($event)">
+  <div class="action-button-wrapper">
+    <ng-template [ngIf]="icon">
+      <gctr-icon [icon]="icon" [iconFont]="iconFont" [size]="size"></gctr-icon>
+    </ng-template>
+    <h3> {{ label }} </h3>
+  </div>
+</button>

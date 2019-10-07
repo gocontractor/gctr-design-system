@@ -1,0 +1,51 @@
+/* Breakpoints sizes */
+$media-mobile-smaller: 400px;
+$media-mobile-small: 500px;
+$media-mobile: 700px;
+$media-tablet-min: 701px;
+$media-tablet: 960px;
+$media-desktop-min: 961px;
+$media-desktop-small: 1100px;
+$media-desktop-small-min: 1101px;
+$media-desktop: 1440px;
+
+/* Spacing */
+$spacing: 16px;
+$spacing-half: 8px;
+$spacing-big: 24px;
+$header-height: 64px;
+$letter-spacing: 0.04rem;
+
+/* Border radius */
+$radius-std: 4px;
+
+/* Static Colors for IE */
+$PLight: #3A96D3;
+$PMain: #2776AA;
+$SLight: #2CB617;
+$SMain: #1c880c;
+$Black: #212121;
+$Grey: #757575;
+$Disable: #BDBDBD;
+$Ripple: #E0E0E0;
+$Hover: #F2F2F2;
+$BackgroundDefault: #f8f8f8;
+$RagRed: #f44336;
+$RagRedLight: rgba(244, 67, 54, 0.1);
+$RagAmber: #ffc108;
+$RagAmberLight: rgba(255, 193, 8, 0.1);
+$RagGreen: #1c880c;
+$RagGreenLight: rgba(28, 136, 12, 0.1);
+$FeedbackColor: #d2d2d2;
+$GoogleColor: #d34836;
+$FacebookColor: #3b5998;
+$LinkedinColor: #0077b5;
+$TwitterColor: #0084b4;
+
+/* Modal sizes */
+$modal-small: 300px;
+$modal-std: 450px;
+$modal-medium: 600px;
+$modal-big: 900px;
+$modal-bigger: 1200px;
+$modal-full: 100%;

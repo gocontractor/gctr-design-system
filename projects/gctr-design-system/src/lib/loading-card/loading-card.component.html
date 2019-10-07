@@ -1,0 +1,6 @@
+<div class="loading-card" [ngClass]="classes">
+  <div class="loading-card-content" [ngClass]="internalClass">
+    <ng-content></ng-content>
+  </div>
+  <gctr-progress-bar [isLoading]="isLoading" [mode]="mode" [value]="value" class="loading-card-bar"></gctr-progress-bar>
+</div>

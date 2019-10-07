@@ -1,0 +1,15 @@
+@import "../imports/variables";
+
+.gctr-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  color: $Disable;
+  color: var(--Disable);
+}
+.gctr-rating:not(.readOnly) .star-rating:hover,
+.gctr-rating:not(.readOnly) .star-rating:hover ~ .star-rating {
+  color: $RagAmber;
+  color: var(--RagAmber);
+  filter: brightness(105%);
+}

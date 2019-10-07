@@ -1,0 +1,211 @@
+<gctr-card>
+    <h1 class="default margin-top-0">CSS Helper Classes</h1>
+    <p>CSS classes to help write consistent and maintanable code, based on Google Style Guide patterns and SMACSS.</p>
+    
+    <h3 class="margin-top-32">Flexbox structure</h3>    
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .flex                       [ set a div to display flex; use .flex-important if needed ]
+        .flex-grow                  [ add flex = 1 to a div ]
+        .flex-grow-x                [ add flex property to a div, where x is a number from 1 to 10 ]
+        .flex-x                     [ add flex property to a div, where x is a number from 1 to 10 ]
+        .flex-basis-x-pc            [ add flex basis property to a div, where x is 50 or 100 (per cent) ]
+        .column                     [ add this class to set direction as column ]
+        .column-tablet              [ add this class to set direction as column in tablet resolution ]
+        .column-mobile              [ add this class to set direction as column in mobile resolution ]
+        .column-mobile-small        [ add this class to set direction as column in mobile small resolution ]
+        .row                        [ add this class to set direction as row ]
+        .row-tablet                 [ add this class to set direction as row in tablet resolution ]
+        .row-mobile                 [ add this class to set direction as row in mobile resolution ]
+        .row-mobile-small           [ add this class to set direction as row in mobile small resolution ]
+        .wrap                       [ add this class to set flex wrap ]
+        .wrap-tablet                [ add this class to set flex wrap in tablet resolution ]
+        .wrap-mobile                [ add this class to set flex wrap in mobile resolution ]
+        .wrap-mobile-small          [ add this class to set flex wrap in mobile small resolution ]
+        ```
+    </markdown>
+
+    <h3 class="margin-top-32">Flexbox Alignment</h3>    
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .align-items-x              [ add this class to align items, where x = center|stretch|start|end ]
+        .justify-content-x          [ add this class to justify content, where x = space-around|space-between|center|start|end ]
+        .flex-justify-align-center  [ add display flex, justify content center and align items center ]
+        .align-items-middle         [ align an element in the middle of the page with view height and view width ]
+        .button-wrapper             [ align two buttons in opposit directions and standard margin top, to be used in the end of forms ]
+        .va-middle                  [ align items to middle using vertical-align ]
+        ```
+    </markdown>
+    
+    <h3 class="margin-top-32">Standard positions, spacings and colors</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .radius-std                                 [ add border radius standard to an element]
+        .bg-std                                     [ add background standard to an element]
+        .shadow-std                                 [ add box shadow standard to an element]
+        .margin-std                                 [ add standard margins on top, bottom, left and right of an element ]
+        .margin-minus-std                           [ add negative standard margins on top, bottom, left and right of an element ]
+        .margin-[top|bottom|left|right]-std         [ add standard margin to an element ]
+        .margin-minus-[top|bottom|left|right]-std   [ add negative standard margin to an element ]
+        .padding-std                                [ add standard padding on top, bottom, left and right of an element ]
+        .padding-[top|bottom|left|right]-std        [ add standard padding to an element ]
+        .[top|bottom|left|right]-std                [ set position standard to an element ]   
+        ```
+    </markdown>
+    
+    <h3 class="margin-top-32">Cursor</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .default        [ add cursor default to an element]
+        .pointer        [ add cursor pointer to an element]
+        .notallowed     [ add cursor notallowed to an element]
+        .move           [ add cursor move to an element]
+        .no-events      [ add no pointer events to an element]
+        ```
+    </markdown>
+    
+    <h3 class="margin-top-32">Displays</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .hide, .hidden  [ add display none to an element ]                
+        .show           [ add display block to an element ]                
+        .inline         [ add display inline to an element ]                
+        .inline-block   [ add display inline-block to an element ]                
+        .grid           [ add display grid to an element ]             
+        .table          [ add display table to an element ]
+        .mobile-hide    [ add display none to an element on mobile resolution ]
+        .tablet-hide    [ add display none to an element on tablet resolution ]
+        .desktop-hide   [ add display none to an element on desktop resolution ]
+        ```
+    </markdown>
+    
+    <h3 class="margin-top-32">Visibility</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .visibility-hidden      [ add visibility hidden to an element ]
+        .visibility-visible     [ add visibility visible to an element ]
+        ```
+    </markdown>
+    
+    <h3 class="margin-top-32">Margins</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .margin-[x]                                 [ add top, bottom, left and right margins to an element, where x = a number from 0 to 60 multiples of 2 ]   
+        .margin-minus-[x]                           [ add negative top, bottom, left and right margins to an element, where x = a number from 0 to 60 multiples of 2 ]   
+        .margin-[top|bottom|left|right]-[x]         [ add margin to an element, where x = "auto" or = a number from 0 to 60 multiples of 2 ]   
+        .margin-minus-[top|bottom|left|right]-[x]   [ add negative margin to an element, where x = "auto" or = a number from 0 to 60 multiples of 2 ]   
+        .margin-[top|right]-minus-[x]               [ add negative margin to an element, where x = a number from 0 to 60 multiples of 2 ]   
+        .margin-y-[x]                               [ add margins top and bottom to an element, where x = "auto" or = a number from 0 to 60 multiples of 2 ]   
+        .margin-y-minus-[x]                         [ add negative top and bottom margins to an element, where x = "auto" or = a number from 0 to 60 multiples of 2 ]   
+        .margin-x-[x]                               [ add margins left and right to an element, where x = a number from 0 to 60 multiples of 2 ]       
+        .margin-x-minus-[x]                         [ add negative margins left and right to an element, where x = a number from 0 to 60 multiples of 2 ]       
+        .elements-margin-[right|left]               [ add a standard margin right or left to all elements inside a div ]
+        ```
+    </markdown>
+    
+    <h3 class="margin-top-32">Paddings</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .padding-[x]                            [ add padding to an element, where x = a number from 0 to 60 multiples of 4]   
+        .padding-[top|bottom|left|right]-[x]    [ add padding to an element, where x = a number from 0 to 60 multiples of 4]   
+        .padding-y-[x]                          [ add margins top and bottom to an element, where x = a number from 0 to 60 multiples of 4]   
+        .padding-x-[x]                          [ add margins left and right to an element, where x = a number from 0 to 60 multiples of 4 ]
+    ```
+    </markdown>
+    
+    <h3 class="margin-top-32">Sizes</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .view-width                             [ add width of view width to an element ]   
+        .full-width                             [ add width, max width and min width of 100% to an element ]   
+        .width-[x|50-pc|100-pc]                 [ add width to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        .max-width-[x|50-pc|90-pc|100-pc]       [ add max width to an element, where x = a number from 5 to 750 multiples of 5, or 1024 or 1200 ]   
+        .min-width-[x|50-pc|100-pc]             [ add min width to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        .view-height                            [ add height of view height to an element ]   
+        .full-height                            [ add height, max height and min height of 100% to an element ]   
+        .height-[x|100-pc]                      [ add height to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        .max-height-[x|100-pc]                  [ add max height to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        .min-height-[x]                         [ add min height to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        ```
+    </markdown>
+
+    <h3 class="margin-top-32">Positions</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .relative                     [ set position relative to an element ]    
+        .absolute                     [ set position absolute to an element ]    
+        .fixed                        [ set position fixed to an element ]    
+        .absolute-right               [ set position absolute with right = 0 to an element ]   
+        .absolute-top-right           [ set position absolute with top = 0 and right = 0 to an element ]   
+        .absolute-top-left            [ set position absolute with top = 0 and left = 0 to an element ]  
+        .[top|bottom|left|right]-[x]  [ set position to an element, where x = a number from 0 to 60, multiples of 4 ]   
+        ```
+    </markdown>
+
+    <h3 class="margin-top-32">Text, border and background colors</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .primary-color        | .secondary-color          [ setting theme colors to elements ]
+        .primary-bgcolor      | .secondary-bgcolor        [ setting background theme colors to elements ]
+        .primary-border-color | .secondary-border-color   [ setting border theme colors to elements ]
+
+        .black-color          | .grey-color         | .disable-color         | .ripple-color         | .hover-color          [ set grey scale colors to an element ]
+        .black-bgcolor        | .grey-bgcolor       | .disable-bgcolor       | .ripple-bgcolor       | .hover-bgcolor        [ set grey scale background colors to an element ]
+        .black-border-color   | .grey-border-color  | .disable-border-color  | .ripple-border-color  | .hover-border-color   [ set grey scale border colors to an element ]
+
+        .rag-red-color        | .rag-amber-color        | .rag-green-color          [ set rag colors to an element ]
+        .rag-red-bgcolor      | .rag-amber-bgcolor      | .rag-green-bgcolor        [ set rag background colors to an element ]
+        .rag-red-border-color | .rag-amber-border-color | .rag-green-border-color   [ set rag border colors to an element ]
+
+        .rag-red-light-color        | .rag-amber-light-color        | .rag-green-light-color          [ set rag light colors to an element ]
+        .rag-red-light-bgcolor      | .rag-amber-light-bgcolor      | .rag-green-light-bgcolor        [ set rag light background colors to an element ]
+        .rag-red-light-border-color | .rag-amber-light-border-color | .rag-green-light-border-color   [ set rag light border colors to an element ]
+
+        .white-color          [ set white color to an element ]   
+        .feedback-color       [ set feedback color to an element ]
+        ```
+    </markdown>
+
+    <h3 class="margin-top-32">Typography classes</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .text[x]                [ font-size to an element, where x = a number between 8 and 100 multiples of 2 ]   
+        .bold                   [ set bold text to an element ]   
+        .bold-hover             [ set bold text to an element on hover ]  
+        .nobold                 [ remove bold text of an element ]   
+        .nobold-hover           [ remove bold text of an element on hover ]  
+        .italic                 [ set italic text to an element ]   
+        .italic-hover           [ set italic text to an element on hover ]   
+        .noitalic               [ remove italic text of an element ]   
+        .noitalic-hover         [ remove italic text of an element on hover ]   
+        .underline              [ set underline text to an element ]   
+        .underline-hover        [ set underline text to an element on hover ]   
+        .nounderline            [ remove underline text of an element ]   
+        .nounderline-hover      [ remove underline text of an element on hover ]   
+        .uppercase              [ set uppercase text to an element ]   
+        .uppercase-hover        [ set uppercase text to an element on hover ]   
+        .lowercase              [ set lowercase text to an element ]   
+        .lowercase-hover        [ set lowercase text to an element on hover ]   
+        .break-word             [ set break-word text to an element ]   
+        .break-newlines         [ command element to obey newlines ('\r\n') ]
+        .no-wrap                [ set white space no-wrap text to an element ]   
+        .ellipsis               [ set ellipsis to an element ]   
+        ```
+    </markdown>
+
+    <h3 class="margin-top-32">Breakpoints for media queries</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        $media-mobile-smaller       [  400px  ]
+        $media-mobile-small         [  500px  ]
+        $media-mobile               [  700px  ]
+        $media-tablet-min           [  701px  ]
+        $media-tablet               [  960px  ]
+        $media-desktop-min          [  961px  ]
+        $media-desktop-small        [  1100px ]
+        $media-desktop-small-min    [  1101px ]
+        $media-desktop              [  1440px ]
+        ```
+    </markdown>
+    
+</gctr-card>

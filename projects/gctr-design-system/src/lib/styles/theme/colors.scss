@@ -1,0 +1,226 @@
+@import "../imports/variables";
+
+body, button {
+  color: $Grey;
+}
+
+.primary-color {
+  color: $PMain;
+  color: var(--PMain);
+}
+.primary-bgcolor {
+  background-color: $PMain;
+  background-color: var(--PMain);
+}
+.primary-border-color {
+  border-color: $PMain;
+  border-color: var(--PMain);
+}
+
+.primary-light-color {
+  color: $PLight;
+  color: var(--PLight);
+}
+.primary-light-bgcolor {
+  background-color: $PLight;
+  background-color: var(--PLight);
+}
+.primary-light-border-color {
+  border-color: $PLight;
+  border-color: var(--PLight);
+}
+
+.secondary-color {
+  color: $SMain;
+  color: var(--SMain);
+}
+.secondary-bgcolor {
+  background-color: $SMain;
+  background-color: var(--SMain);
+}
+.secondary-border-color {
+  border-color: $SMain;
+  border-color: var(--SMain);
+}
+
+.secondary-light-color {
+  color: $SLight;
+  color: var(--SLight);
+}
+.secondary-light-bgcolor {
+  background-color: $SLight;
+  background-color: var(--SLight);
+}
+.secondary-light-border-color {
+  border-color: $SLight;
+  border-color: var(--SLight);
+}
+
+.black-color {
+  color: $Black;
+}
+.black-bgcolor {
+  background-color: $Black;
+}
+.black-border-color {
+  border-color: $Black;
+}
+
+.grey-color {
+  color: $Grey;
+}
+.grey-bgcolor {
+  background-color: $Grey;
+}
+.grey-border-color {
+  border-color: $Grey;
+}
+
+.disable-color {
+  color: $Disable;
+}
+.disable-bgcolor {
+  background-color: $Disable;
+}
+.disable-border-color {
+  border-color: $Disable;
+}
+
+.ripple-color {
+  color: $Ripple;
+}
+.ripple-bgcolor {
+  background-color: $Ripple;
+}
+.ripple-border-color {
+  border-color: $Ripple;
+}
+
+.hover-color {
+  color: $Hover;
+}
+.hover-bgcolor {
+  background-color: $Hover;
+}
+.hover-border-color {
+  border-color: $Hover;
+}
+
+.rag-red-color {
+  color: $RagRed;
+}
+.rag-red-bgcolor {
+  background-color: $RagRed;
+}
+.rag-red-border-color {
+  border-color: $RagRed;
+}
+
+.rag-red-light-color {
+  color: $RagRedLight;
+}
+.rag-red-light-bgcolor {
+  background-color: $RagRedLight;
+}
+.rag-red-light-border-color {
+  border-color: $RagRedLight;
+}
+
+.rag-amber-color {
+  color: $RagAmber;
+}
+.rag-amber-bgcolor {
+  background-color: $RagAmber;
+}
+.rag-amber-border-color {
+  border-color: $RagAmber;
+}
+
+.rag-amber-light-color {
+  color: $RagAmberLight;
+}
+.rag-amber-light-bgcolor {
+  background-color: $RagAmberLight;
+}
+.rag-amber-light-border-color {
+  border-color: $RagAmberLight;
+}
+
+.rag-green-color {
+  color: $RagGreen;
+}
+.rag-green-bgcolor {
+  background-color: $RagGreen;
+}
+.rag-green-border-color {
+  border-color: $RagGreen;
+}
+
+.rag-green-light-color {
+  color: $RagGreenLight;
+}
+.rag-green-light-bgcolor {
+  background-color: $RagGreenLight;
+}
+.rag-green-light-border-color {
+  border-color: $RagGreenLight;
+}
+
+.bgDropdownButtons {
+  background-color: $BackgroundDefault;
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+.white-bgcolor {
+  background-color: #ffffff;
+}
+
+.white-border {
+  border-color: #ffffff;
+}
+
+.lightIconWithHover {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.lightIconWithHover:hover {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+/* Standards */
+.bg-hover, .bg-hover-hover:hover {
+  background: $Hover;
+}
+
+.bg-std, .bg-std-hover:hover {
+  background-color: $BackgroundDefault;
+}
+
+.std-border-color {
+  border-color: $BackgroundDefault;
+}
+
+.feedback-color {
+  color: $FeedbackColor;
+}
+
+/* Social Media */
+.google-bgcolor {
+  background-color: $GoogleColor;
+}
+.facebook-bgcolor {
+  background-color: $FacebookColor;
+}
+.linkedin-bgcolor {
+  background-color: $LinkedinColor;
+}
+.twitter-bgcolor {
+  background-color: $TwitterColor;
+}

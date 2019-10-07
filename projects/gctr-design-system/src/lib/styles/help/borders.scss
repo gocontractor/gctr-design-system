@@ -1,0 +1,39 @@
+@for $i from 1 through 5 {
+  .border-solid-#{$i} { border-width: #{$i}px; border-style: solid; }
+  .border-top-solid-#{$i} { border-top-width: #{$i}px; border-top-style: solid; }
+  .border-right-solid-#{$i} { border-right-width: #{$i}px; border-right-style: solid; }
+  .border-bottom-solid-#{$i} { border-bottom-width: #{$i}px; border-bottom-style: solid; }
+  .border-left-solid-#{$i} { border-left-width: #{$i}px; border-left-style: solid; }
+
+  .border-dotted-#{$i} { border-width: #{$i}px; border-style: dotted; }
+  .border-top-dotted-#{$i} { border-top-width: #{$i}px; border-top-style: dotted; }
+  .border-right-dotted-#{$i} { border-right-width: #{$i}px; border-right-style: dotted; }
+  .border-bottom-dotted-#{$i} { border-bottom-width: #{$i}px; border-bottom-style: dotted; }
+  .border-left-dotted-#{$i} { border-left-width: #{$i}px; border-left-style: dotted; }
+
+  .border-dashed-#{$i} { border-width: #{$i}px; border-style: dashed; }
+  .border-top-dashed-#{$i} { border-top-width: #{$i}px; border-top-style: dashed; }
+  .border-right-dashed-#{$i} { border-right-width: #{$i}px; border-right-style: dashed; }
+  .border-bottom-dashed-#{$i} { border-bottom-width: #{$i}px; border-bottom-style: dashed; }
+  .border-left-dashed-#{$i} { border-left-width: #{$i}px; border-left-style: dashed; }
+}
+
+.border-0 {
+  border: none;
+}
+
+.border-top-0 {
+  border-top: none;
+}
+
+.border-right-0 {
+  border-right: none;
+}
+
+.border-bottom-0 {
+  border-bottom: none;
+}
+
+.border-left-0 {
+  border-left: none;
+}

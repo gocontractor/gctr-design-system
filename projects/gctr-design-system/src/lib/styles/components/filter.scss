@@ -1,0 +1,17 @@
+@import "../imports/variables";
+
+.filter-sidenav-container {
+    min-width: 230px;
+    background-color: white;
+    padding: $spacing;
+ }
+  
+ .filter-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+.mat-drawer-side.mat-drawer-end {
+    border-left: none;
+ }

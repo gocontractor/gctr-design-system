@@ -1,0 +1,10 @@
+@import "../imports/mixins";
+
+/* Shadow */
+.shadow-std {
+  @include shadow-std();
+}
+
+.noshadow {
+  box-shadow: none;
+}

@@ -1,0 +1,20 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-typography',
+  templateUrl: './typography.component.html',
+  styleUrls: ['./typography.component.scss']
+})
+export class TypographyComponent implements OnInit {
+  showCode: boolean;
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  array(n: number): number[] {
+    return Array(n);
+  }
+
+}

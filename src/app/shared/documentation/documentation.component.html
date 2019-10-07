@@ -1,0 +1,69 @@
+<gctr-card class="relative">
+  <div class="scollParent">
+    <h1 class="scroll-x scrollChild">{{ componentDocs.name }}</h1>
+  </div>
+  <ng-content></ng-content>
+</gctr-card>
+
+<gctr-card cssClass="margin-top-32">
+  <h2>Usage</h2>
+
+  <div *ngIf="module" class="margin-top-16">
+    <h3>Module:</h3>
+    <markdown ngPreserveWhitespaces>
+      ```typescript
+      import &#123; {{ module }} &#125; from 'gctr-design-system'
+      ```
+    </markdown>
+  </div>
+
+  <div class="margin-top-16" *ngIf="!hideSelector">
+    <h3>Selector:</h3>
+    <markdown ngPreserveWhitespaces>
+      ```html
+      {{ selector }}
+      ```
+    </markdown>
+  </div>
+
+  <div *ngIf="codeTitle" class="margin-top-16">
+    <app-code [title]="codeTitle"></app-code>
+  </div>
+</gctr-card>
+<ng-container *ngIf="inputs.data.length > 0">
+  <gctr-card cssClass="margin-top-32">
+    <h3 class="margin-top-16">Inputs</h3>
+    <gctr-data-table [dataTableSettings]="inputDataTableSettings"></gctr-data-table>
+  </gctr-card>
+</ng-container>
+<ng-container *ngIf="outputs.data.length > 0">
+  <gctr-card cssClass="margin-top-32">
+    <h3 class="margin-top-16">Outputs</h3>
+    <gctr-data-table [dataTableSettings]="outputDataTableSettings"></gctr-data-table>
+  </gctr-card>
+</ng-container>
+<ng-container *ngIf="twoWayBound.data.length > 0">
+  <gctr-card cssClass="margin-top-32">
+    <h3 class="margin-top-16">Two-Way bound properties</h3>
+    <gctr-data-table [dataTableSettings]="twoWayDataTableSettings"></gctr-data-table>
+  </gctr-card>
+</ng-container>
+<ng-container *ngIf="methods.data.length > 0">
+  <gctr-card cssClass="margin-top-32">
+    <h3 class="margin-top-32">Methods:</h3>
+    <gctr-data-table [dataTableSettings]="methodDataTableSettings"></gctr-data-table>
+  </gctr-card>
+</ng-container>
+<ng-container *ngIf="classes.length > 0">
+  <gctr-card cssClass="margin-top-32">
+    <h3 class="margin-top-32">Classes:</h3>
+    <div *ngFor="let class of classesDocs">
+      {{class.name}}
+      <ul>
+        <li *ngFor="let prop of class.props">
+          {{prop.name}}{{prop.type && ': ' + prop.type}}
+        </li>
+      </ul>
+    </div>
+  </gctr-card>
+</ng-container>

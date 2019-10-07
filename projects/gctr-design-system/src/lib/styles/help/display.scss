@@ -1,0 +1,41 @@
+@import "../imports/variables";
+
+.hide, .hidden {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.table {
+    display: table;
+}
+
+.grid {
+    display: grid;
+}
+
+@media only screen and (max-width: $media-mobile) {
+    .mobile-hide {
+        display: none !important;
+    }    
+}
+
+@media only screen and (min-width: $media-tablet-min) {
+    .desktop-hide {
+        display: none !important;
+    }    
+}

@@ -1,0 +1,29 @@
+<mat-sidenav-container class="gctr-wrapper" autosize>
+  <mat-sidenav #drawer class="gctr-sidenav" [mode]="smallScreen ? 'over' : 'side'" [fixedInViewport]="true"
+    [fixedTopGap]="64">
+    <nav>
+      <ul>
+        <li><a routerLinkActive="active" routerLink="/grid">Grid</a></li>
+        <li><a routerLinkActive="active" routerLink="/typography">Typography</a></li>
+        <li><a routerLinkActive="active" routerLink="/header">Header</a></li>
+        <li><a routerLinkActive="active" routerLink="/structure">Structure</a></li>
+        <li><a routerLinkActive="active" routerLink="/colors">Colors</a></li>
+        <li><a routerLinkActive="active" routerLink="/icons">Icons</a></li>
+        <li><a routerLinkActive="active" routerLink="/card">Card</a></li>
+        <li><a routerLinkActive="active" routerLink="/loading-card">Loading Card</a></li>
+        <li><a routerLinkActive="active" routerLink="/progress-bar">Progress Bar</a></li>
+        <li><a routerLinkActive="active" routerLink="/actions">Action buttons</a></li>
+        <li><a routerLinkActive="active" routerLink="/buttons">Buttons</a></li>
+        <li><a routerLinkActive="active" routerLink="/data-table">Data Table</a></li>
+        <li><a routerLinkActive="active" routerLink="/modal">Modal</a></li>
+        <li><a routerLinkActive="active" routerLink="/popover">Popover</a></li>
+        <li><a routerLinkActive="active" routerLink="/rating">Rating</a></li>
+        <li><a routerLinkActive="active" routerLink="/css">CSS Helper Classes</a></li>
+      </ul>
+    </nav>
+  </mat-sidenav>
+
+  <div class="gctr-content">
+    <ng-content></ng-content>
+  </div>
+</mat-sidenav-container>

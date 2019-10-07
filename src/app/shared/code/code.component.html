@@ -1,0 +1,16 @@
+<div class="flex wrap">
+  <h3>Code:</h3>
+</div>
+<div class="relative">
+  <div class="absolute z999" id="copy-button">
+      <gctr-button
+        design="main"
+        color="primary"
+        class="margin-left-8"
+        icon="file_copy"
+        (click)="copyToClipboard()"
+        tooltip="Copy To Clipboard"
+      ></gctr-button>
+  </div>
+<markdown [src]="'assets/examples/' + title" lineNumbers #markdown></markdown>
+</div>

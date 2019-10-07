@@ -1,0 +1,16 @@
+@import "../imports/variables";
+@import "../imports/mixins";
+
+/* Base Cards */
+%base-card {
+    cursor: default;
+    position: relative;
+    max-width: 100%;
+    padding: $spacing;
+    border-radius: $radius-std;
+    background-color: #fff;
+    @include shadow-std();
+    &.small-padding {
+        padding: $spacing-half;
+    }
+}

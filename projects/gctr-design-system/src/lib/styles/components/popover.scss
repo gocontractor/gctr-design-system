@@ -1,0 +1,17 @@
+@import "../imports/variables";
+
+.mde-popover-panel {
+    background: rgba(33, 33, 33, 0.9);
+    border-radius: $radius-std;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    max-width: 300px;
+    padding: $spacing-half $spacing;
+    width: 100%;
+}
+.mde-popover-after .mde-popover-direction-arrow,
+.mde-popover-above .mde-popover-direction-arrow {
+    border-color: transparent transparent rgba(33, 33, 33, 0.9) !important;
+    top: -8px !important;
+}

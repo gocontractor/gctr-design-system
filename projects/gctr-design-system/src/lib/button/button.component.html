@@ -1,0 +1,13 @@
+<button 
+  mat-button
+  class="button"
+  [class.single]="!label"
+  [ngClass]="classes"
+  [type]="type"
+  [matTooltip]="tooltip"
+  [disabled]="disabled"
+  (click)="callback.emit($event)"
+  >
+  <ng-template [ngIf]="icon"><gctr-icon [icon]="icon" [iconFont]="iconFont"></gctr-icon></ng-template>
+  <ng-template [ngIf]="label"><span class="button-label">{{ label }}</span></ng-template>
+</button>

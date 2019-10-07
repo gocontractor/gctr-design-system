@@ -1,0 +1,35 @@
+@import "../imports/placeholder";
+@import "../imports/variables";
+
+.loading-card {
+  @extend %base-card;
+  width: 100%;
+  padding: 0;
+  .loading-card-bar {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    .progress-bar {
+      border-radius: 0 0 $radius-std $radius-std;
+    }
+  }
+  &.small {
+    max-width: $modal-small;
+  }
+  &.std {
+    max-width: $modal-std;
+  }
+  &.medium {
+    max-width: $modal-medium;
+  }
+  &.big {
+    max-width: $modal-big;
+  }
+}
+
+.loading-card-content {
+  padding: $spacing;
+  width: 100%;
+}

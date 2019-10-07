@@ -1,0 +1,13 @@
+@import "../imports/mixins";
+@import "../imports/variables";
+
+.gctr-wrapper {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - #{$header-height});
+}
+
+.gctr-content {
+    padding: $spacing;
+    flex-basis:  100%
+}

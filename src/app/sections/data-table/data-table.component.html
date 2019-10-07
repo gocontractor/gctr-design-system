@@ -1,0 +1,41 @@
+<app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'data-table/data-table.html'"
+  [classes]="classes" [hideSelector]="false">
+  <div class="flex row align-items-center">
+    <h2 class="margin-y-16 margin-right-16">Basic</h2>
+    <mat-icon class="pointer" (click)="showBasicCode = !showBasicCode">code</mat-icon>
+  </div>
+  <mat-form-field>
+    <mat-label>Columns</mat-label>
+    <mat-select [formControl]="basicColumns" multiple>
+      <mat-option *ngFor="let column of basicColumnsOptions" [value]="column">{{column}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-card class="gctr-card">
+    <ng-template [ngIf]="!showBasicCode" [ngIfElse]="basicCode">
+      <gctr-data-table [dataTableSettings]="basicExampleDataTableSettings"
+        [(selectionModel)]="exampleSelectionModel">
+      </gctr-data-table>
+    </ng-template>
+    <ng-template #basicCode>
+      <app-code [title]="'data-table/basic.ts'"></app-code>
+    </ng-template>
+  </mat-card>
+  <ul>
+    <li *ngFor="let item of exampleSelectionModel.selected">{{item.name}} - {{item.mandatory}} - {{item.extraText}}</li>
+  </ul>
+
+  <div class="flex row align-items-center">
+    <h2 class="margin-y-16 margin-right-16">Advanced</h2>
+    <mat-icon class="pointer" (click)="showAdvancedCode = !showAdvancedCode">code</mat-icon>
+  </div>
+  <mat-card class="gctr-card">
+    <ng-template [ngIf]="!showAdvancedCode" [ngIfElse]="advancedCode">
+      <gctr-data-table [dataTableSettings]="inputsExampleDataTableSettings"
+        [(selectionModel)]="exampleSelectionModel">
+      </gctr-data-table>
+    </ng-template>
+    <ng-template #advancedCode>
+      <app-code [title]="'data-table/advanced.ts'"></app-code>
+    </ng-template>
+  </mat-card>
+</app-documentation>

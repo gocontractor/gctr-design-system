@@ -1,0 +1,138 @@
+@import "../imports/variables";
+
+/* View size */
+.view-height {
+  height: 100vh;
+}
+
+.view-width {
+  width: 100vw;
+  max-width: 100%;
+}
+
+/* Full sizes */
+.full-width {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.full-height {
+  min-height: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+/* Width sizes */
+@for $i from 1 through 150 {
+  .width-#{$i * 5} {
+    width: #{$i * 5}px;
+  }
+  .min-width-#{$i * 5} {
+    min-width: #{$i * 5}px;
+  }
+  .max-width-#{$i * 5} {
+    max-width: #{$i * 5}px;
+  }
+}
+
+.width-100-pc {
+  width: 100%;
+}
+
+.width-50-pc {
+  width: 50%;
+}
+
+.max-width-100-pc {
+  max-width: 100%;
+}
+
+.max-width-90-pc {
+  max-width: 90%;
+}
+
+.max-width-50-pc {
+  max-width: 50%;
+}
+
+.max-width-1024 {
+  max-width: 1024px;
+}
+
+.max-width-1200 {
+  max-width: 1200px;
+}
+
+/* Width sizes */
+.max-width-large {
+  max-width: 41rem;
+}
+
+.max-width-medium {
+  max-width: 31rem;
+}
+
+.max-width-small {
+  max-width: 21rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .width-100-pc-mobile-small {
+    width: 100%;
+  }
+  .width-50-pc-mobile-small {
+    width: 50%;
+  }
+  .width-auto-mobile-small {
+    width: auto;
+  }
+}
+
+/* Height sizes */
+@for $i from 1 through 150 {
+  .height-#{$i * 5} {
+    height: #{$i * 5}px;
+  }
+  .min-height-#{$i * 5} {
+    min-height: #{$i * 5}px;
+  }
+  .max-height-#{$i * 5} {
+    max-height: #{$i * 5}px;
+  }
+}
+
+@media only screen and (max-width: $media-mobile) {
+  @for $i from 1 through 150 {
+    .max-height-#{$i*5}-mobile {
+      max-height: #{$i * 5}px;
+    }
+    .min-height-#{$i*5}-mobile {
+      min-height: #{$i * 5}px;
+    }
+  }
+}
+
+.height-100-pc {
+  height: 100%;
+}
+
+.height-auto {
+  height: auto !important;
+}
+
+.min-height-100-pc {
+  min-height: 100%;
+}
+
+.min-height-100-vh {
+  min-height: 100vh;
+}
+
+.max-height-100-pc {
+  max-height: 100%;
+}
+
+.max-height-100-vh {
+  max-height: 100vh;
+}

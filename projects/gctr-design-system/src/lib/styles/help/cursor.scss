@@ -1,0 +1,19 @@
+.default {
+  cursor: default;
+}
+
+.notallowed {
+  cursor: not-allowed;
+}
+
+.move {
+  cursor: move;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.no-events {
+  pointer-events: none;
+}

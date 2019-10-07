@@ -1,0 +1,36 @@
+<app-documentation
+  [componentName]="componentName"
+  [module]="module"
+  [codeTitle]="'icon.html'"
+>
+  <gctr-icon
+    icon="code"
+    class="pointer absolute top-16 right-16"
+    (click)="showCode = !showCode"
+  ></gctr-icon>
+  <p>Icons pre-selected for the platform.</p>
+  <div class="color-palette icons margin-top-32">
+    <div *ngFor="let icon of iconsList" class="items-block">
+      <div *ngFor="let i of icon">
+        <gctr-icon
+          icon="{{ i.icon }}"
+          iconFont="{{ i.iconFont }}"
+          size="{{ i.size }}"
+          class="pointer"
+          (click)="copyToClipboard(i.icon, i.iconFont)"
+          [matTooltip]="'Copy To Clipboard'"
+        ></gctr-icon>
+        <div class="content">
+          <div class="flex justify-content-space-between">
+            <p class="bold margin-top-0">{{ i.icon }}</p>
+          </div>
+          <p class="margin-0 grey-color" *ngIf="showCode">
+            &lt;gctr-icon icon="{{ i.icon }}"
+            <b class="nobold" *ngIf="i.iconFont">iconFont="{{ i.iconFont }}"</b
+            >> &lt;/gctr-icon>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-documentation>

@@ -1,0 +1,116 @@
+@import "../imports/variables";
+
+/* Position options 0/4/8/12/16/20/24/28/32 */
+@for $i from 0 through 15 {
+  .top-#{$i*4} {
+    top: #{$i * 4}px;
+  }
+  .bottom-#{$i*4} {
+    bottom: #{$i * 4}px;
+  }
+  .left-#{$i*4} {
+    left: #{$i * 4}px;
+  }
+  .right-#{$i*4} {
+    right: #{$i * 4}px;
+  }
+}
+
+/* Position types */
+.relative {
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.static {
+  position: static !important;
+}
+
+.absolute-top-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.absolute-top-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Z-index */
+@for $i from 0 through 10 {
+  .z#{$i} {
+    z-index: #{$i};
+  }
+}
+.z99 {
+  z-index: 99;
+}
+.z999 {
+  z-index: 999;
+}
+.z9999 {
+  z-index: 9999;
+}
+
+/* Float */
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-auto {
+  float: auto;
+}
+
+/* Positions */
+.bottom-auto {
+  bottom: auto;
+}
+.right {
+  right: 0;
+}
+.right-50-pc {
+  right: 50%;
+}
+.left {
+  left: 0;
+}
+.left-50-pc {
+  left: 50%;
+}
+.bottom {
+  bottom: 0;
+}
+.bottom-50-pc {
+  bottom: 50%;
+}
+.top {
+  top: 0;
+}
+.top-50-pc {
+  top: 50%;
+}
+.right-std {
+  right: $spacing;
+}
+.left-std {
+  left: $spacing;
+}
+.bottom-std {
+  bottom: $spacing;
+}
+.top-std {
+  top: $spacing;
+}

@@ -1,0 +1,17 @@
+@import "../imports/variables";
+
+.radius-std {
+  border-radius: $radius-std;
+}
+
+.radius-all {
+  border-radius: 100%;
+}
+
+.radius-left {
+  border-radius: 100% 0 0 100% !important;
+}
+
+.radius-right {
+  border-radius: 0 100% 100% 0 !important;
+}

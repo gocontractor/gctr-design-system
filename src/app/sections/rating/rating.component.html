@@ -1,0 +1,13 @@
+<app-documentation [componentName]="componentName" [module]="module"
+    [codeTitle]="'gctr-rating/gctr-rating.html'">
+    <p>Rating <b *ngIf="rate"> - {{ rate }} star<span *ngIf="rate > 1">s</span></b> </p>
+    <gctr-rating (callback)="getRate($event)"></gctr-rating>
+    <br />
+    <p>Display rating</p>
+    <gctr-rating rate="0" readOnly="true"></gctr-rating>
+    <gctr-rating rate="1" readOnly="true"></gctr-rating>
+    <gctr-rating rate="2" readOnly="true"></gctr-rating>
+    <gctr-rating rate="3" readOnly="true"></gctr-rating>
+    <gctr-rating rate="4" readOnly="true"></gctr-rating>
+    <gctr-rating rate="5" readOnly="true"></gctr-rating>
+</app-documentation>

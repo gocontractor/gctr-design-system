@@ -1,0 +1,31 @@
+/* Proxima Nova */
+@import url('https://use.typekit.net/kdl4evh.css');
+
+/* Font Awesome Icons */
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+/* Material Icons */
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+@font-face {
+    font-family: 'Material Icons Outlined';
+    src:    url('material-outlined.eot');
+    src:    url('material-outlined.eot?#iefix') format('embedded-opentype'),
+            url('material-outlined.ttf') format('truetype'),
+            url('material-outlined.woff') format('woff'),
+            url('material-outlined.svg#material-outlined') format('svg');
+            font-weight: normal;
+            font-style: normal;
+  }
+
+/* Gctr Icons */
+@font-face {
+    font-family: 'Gctr Icons';
+    src:    url('gctr-font.eot?qtn8b5');
+    src:    url('gctr-font.eot?qtn8b5#iefix') format('embedded-opentype'),
+            url('gctr-font.ttf?qtn8b5') format('truetype'),
+            url('gctr-font.woff?qtn8b5') format('woff'),
+            url('gctr-font.svg?qtn8b5#gctr-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

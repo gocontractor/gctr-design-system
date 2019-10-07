@@ -1,0 +1,19 @@
+<app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'button.html'">
+  <p>Button options availiable in the library.</p>
+  <mat-slide-toggle (change)="handleSlideChange($event)" class="margin-y-16">Dark Mode</mat-slide-toggle>
+  <mat-divider></mat-divider>
+  <div [ngClass]="darkBackground ? 'black-bgcolor' : 'white-bgcolor'">
+      <div *ngFor="let button of buttons" class="flex column elements-margin-right">
+          <div class="flex wrap">
+            <gctr-button class="margin-y-8 margin-x-8" *ngFor="let b of button" design="{{ b.design }}" color="{{ b.color }}" label="{{ b.label }}"
+              icon="{{ b.icon }}" iconFont="{{ b.iconFont }}" tooltip="{{ b.tooltip }}" disabled="{{ b.disabled }}"></gctr-button>
+          </div>
+          <mat-divider></mat-divider>
+      </div>
+      <div class="flex row">
+        <gctr-button design="float" color="primary" icon="edit" cssClass="relative" tooltip="Edit" class="padding-top-36 padding-left-36 inline-block"></gctr-button>
+        <gctr-button design="float" color="secondary" icon="save" cssClass="relative" tooltip="Save" class="padding-top-36 padding-left-36 inline-block"></gctr-button>
+        <gctr-button design="float-cancel" icon="close" cssClass="relative" tooltip="Cancel" style="padding-left:100px" class="padding-top-36 inline-block"></gctr-button>
+      </div>
+  </div>
+</app-documentation>

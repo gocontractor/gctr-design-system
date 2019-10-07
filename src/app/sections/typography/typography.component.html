@@ -1,0 +1,90 @@
+<gctr-card class="relative">
+    <gctr-icon icon="code" class="pointer absolute top-16 right-16" (click)="showCode = !showCode">code</gctr-icon>
+    <h1 class="default margin-top-0">Typography</h1>
+    <p>Default family: Proxima Nova.</p>
+
+    <h2 class="margin-top-32">Headings</h2>
+    <p>Default headings h1 to h4</p>
+    <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
+        <h1 class="margin-top-0">The quick brown fox jumps over the lazy dog</h1>
+        <h2 class="margin-top-0">The quick brown fox jumps over the lazy dog</h2>
+        <h3 class="margin-top-0">The quick brown fox jumps over the lazy dog</h3>
+        <h4 class="margin-top-0">The quick brown fox jumps over the lazy dog</h4>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <h1>The quick brown fox jumps over the lazy dog</h1>
+            <h2>The quick brown fox jumps over the lazy dog</h2>
+            <h3>The quick brown fox jumps over the lazy dog</h3>
+            <h4>The quick brown fox jumps over the lazy dog</h4>
+            ```
+        </markdown>
+    </div>
+
+    <h2 class="margin-top-32">Paragraphs</h2>
+    <p>Default paragraph with p</p>
+    <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra pellentesque turpis, eget ullamcorper lorem lacinia in. Aliquam id porttitor felis. Mauris vel faucibus arcu, ornare sollicitudin magna. Etiam luctus lorem quis dui viverra suscipit. In velit turpis, ullamcorper eget ex vel, ullamcorper volutpat elit. </p>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+            ```
+        </markdown>
+    </div>
+
+    <h2 class="margin-top-32">Style</h2>
+    <p>Formating styles with bold, bolder, italic, underline, uppercase, lowercase and link.</p>
+    <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
+        <p> <span class="bold">Bold text</span> | <b class="nobold">No bold text</b> | <span class="bold-hover">Bold on hover text</span> | <b class="nobold-hover">No bold on hover text</b></p>
+        <p> <span class="italic">Italic text</span> | <span class="noitalic">No italic text</span> | <span class="italic-hover">Italic on hover text</span> | <span class="italic noitalic-hover">No italic on hover text</span></p>
+        <p> <span class="underline">Underlined text</span> | <u class="nounderline">No underlined text</u> | <span class="underline-hover">Underlined on hover text</span> | <span class="underline nounderline-hover">No underlined on hover text</span></p>
+        <p> <span class="uppercase">Uppercase text</span> | <span class="uppercase-hover">Uppercase on hover text</span></p>
+        <p> <span class="lowercase">LOWERCASE TEXT</span> | <span class="lowercase-hover">Lowercase On Hover Text</span></p>
+        <p> <a href="/">This is a link</a> </p>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <span class="bold">bold text</span>
+            <span class="nobold">no bold text</span>
+            <span class="bold-hover">bold on hover text</span>
+            <span class="italic">Italic text</span>
+            <span class="noitalic">no italic text</span>
+            <span class="italic-hover">italic on hover text</span>
+            <span class="underline">underline text</span>
+            <span class="nounderline">no underline text</span>
+            <span class="underline-hover">underline on hover text</span>
+            <span class="uppercase">uppercase text</span>
+            <span class="uppercase-hover">uppercase on hover text</span>
+            <span class="lowercase">lowercase text</span>
+            <span class="lowercase-hover">lowercase on hover text</span>
+            <a href="#">this is a link</a>
+               ```
+        </markdown>
+    </div>
+
+    <h2 class="margin-top-32">Sizes</h2>
+    <p>Font sizes from 8 to 100, multiples of 2</p>
+    <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
+        <p *ngFor="let item of array(10); let i = index">
+            <span *ngIf="i > 3" class="text{{ (i + 1) * 2 }} margin-0">Text with font size {{ (i + 1) * 2 }}px </span>
+        </p>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <span class="text8">text with font-size of 8px</span>
+            <span class="text10">text with font-size of 10px</span>
+            <span class="text12">text with font-size of 12px</span>
+            <span class="text14">text with font-size of 14px</span>
+            <span class="text16">text with font-size of 16px</span>
+            <span class="text18">text with font-size of 18px</span>
+            <span class="text20">text with font-size of 20px</span>
+               ```
+        </markdown>
+    </div>
+
+</gctr-card>

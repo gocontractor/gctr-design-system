@@ -1,0 +1,145 @@
+<gctr-card class="relative">
+    <gctr-icon icon="code" class="pointer absolute top-16 right-16" (click)="showCode = !showCode">code</gctr-icon>
+    <h1 class="default margin-top-0">Color Pallet</h1>
+    <br />
+
+    <p>Theme default colors</p>
+    <div class="color-palette">
+        <div class="items-block">
+            <span class="primary-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#2776AA')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Primary color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #2776AA</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $PMain</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --PMain</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="secondary-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#1c880c')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Secondary color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #1c880c</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $SMain</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --SMain</p>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <p>Grey scale colors</p>
+    <div class="color-palette">
+        <div class="items-block">
+            <span class="black-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#212121')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Black color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #212121</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $Black</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --Black</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="grey-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#757575')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Grey color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #757575</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $Grey</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --Grey</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="disable-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#BDBDBD')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Disable color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #BDBDBD</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $Disable</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --Disable</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="ripple-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#E0E0E0')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Ripple color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #E0E0E0</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $Ripple</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --Ripple</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="hover-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#F2F2F2')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Hover color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #F2F2F2</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $Hover</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --Hover</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="bg-std pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#F8F8F8')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Background default color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #F8F8F8</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $BackgroundDefault</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --BackgroundDefault</p>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <p>Rag colors - Red, Amber and Green</p>
+    <div class="color-palette">
+        <div class="items-block">
+            <span class="rag-red-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#F44336')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">RAG Red color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #F44336</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $RagRed</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --RagRed</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="rag-red-light-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('rgba(244, 67, 54, 0.1)')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">RAG Red light color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: ---</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $RagRedLight</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --RagRedLight</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="rag-amber-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#FFC108')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">RAG Amber color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #FFC108</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $RagAmber</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --RagAmber</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="rag-amber-light-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('rgba(255, 193, 8, 0.1)')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">RAG Amber light color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: ---</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $RagAmbeLightr</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --RagAmberLight</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="rag-green-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('#348424')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">RAG Green color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #348424</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $RagGreen</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --RagGreen</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="rag-green-light-bgcolor pointer" matTooltip="Copy to clipboard" (click)="copyToClipboard('rgba(28, 136, 12, 0.1)')"></span>
+            <div class="content">
+                <p class="bold margin-top-0">RAG Green light color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: ---</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $RagGreenLight</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --RagGreenLight</p>
+            </div>
+        </div>
+    </div>
+</gctr-card>
