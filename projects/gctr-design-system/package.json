@@ -6,15 +6,15 @@
     "url": "https://github.com/gocontractor/gctr-design-system.git"
   },
   "homepage": "https://github.com/gocontractor/gctr-design-system/",
-  "version": "0.0.87",
+  "version": "0.0.88",
   "scripts": {
     "build": "ng-packagr -p package.json",
     "postbuild": "gulp"
   },
   "peerDependencies": {
     "@angular/material": "^7.0.2",
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0",
+    "@angular/common": "^8.2.11",
+    "@angular/core": "^8.2.11",
     "@material-extended/mde": "^2.3.1"
   }
 }
