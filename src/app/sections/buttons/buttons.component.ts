@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ButtonsService } from '../../services/buttons.service';
 import { Buttons } from 'src/app/models/buttons';
-import { MatSlideToggleChange } from '@angular/material/slide-toggle';
+import { MatSlideToggleChange } from '@angular/material';
 
 @Component({
   selector: 'app-buttons',

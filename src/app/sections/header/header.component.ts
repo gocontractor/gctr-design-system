@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatSlideToggleChange } from '@angular/material/slide-toggle';
+import { MatSlideToggleChange } from '@angular/material';
 
 @Component({
     templateUrl: './header.component.html'

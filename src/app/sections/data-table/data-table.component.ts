@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatCheckboxChange } from '@angular/material/checkbox';
-import { MatTableDataSource } from '@angular/material/table';
+import { MatTableDataSource, MatCheckboxChange } from '@angular/material';
 import { DataColumnMode, DataTableMenuItem, DataTableSettings } from 'projects/gctr-design-system/src/public_api';
 import { SelectionModel } from '@angular/cdk/collections';
 import { FormControl } from '@angular/forms';
