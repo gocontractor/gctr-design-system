@@ -10,7 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'GctrDesignSystem';
-  @ViewChild('content') content: ContentComponent;
+  @ViewChild('content', {static: false}) content: ContentComponent;
   constructor(private startup: DocumentationService, private router: Router) {}
   ngOnInit() {
     // If there is no startup data received (maybe an error!)

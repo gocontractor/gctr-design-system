@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
 export class ContentComponent implements OnInit, OnDestroy {
   smallScreen: boolean;
 
-  @ViewChild('drawer') drawer: MatDrawer;
+  @ViewChild('drawer', {static: false}) drawer: MatDrawer;
 
   breakpointsSubscription: Subscription;
 

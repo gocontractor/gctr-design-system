@@ -487,7 +487,7 @@
 						"typeArguments": [
 							{
 								"type": "intrinsic",
-								"name": "Object"
+								"name": "any"
 							}
 						]
 					},
@@ -933,7 +933,7 @@
 						"typeArguments": [
 							{
 								"type": "intrinsic",
-								"name": "Object"
+								"name": "any"
 							}
 						]
 					},
@@ -2106,7 +2106,8 @@
 								"name": "ViewChild"
 							},
 							"arguments": {
-								"selector": "MatPaginator"
+								"selector": "MatPaginator",
+								"opts": "{static: true}"
 							}
 						}
 					],
@@ -2114,7 +2115,7 @@
 						{
 							"fileName": "data-table/data-table/data-table.component.ts",
 							"line": 38,
-							"character": 36
+							"character": 52
 						}
 					],
 					"type": {
@@ -2153,7 +2154,7 @@
 						"typeArguments": [
 							{
 								"type": "intrinsic",
-								"name": "Object"
+								"name": "any"
 							}
 						]
 					},
@@ -2175,7 +2176,8 @@
 								"name": "ViewChild"
 							},
 							"arguments": {
-								"selector": "MatSort"
+								"selector": "MatSort",
+								"opts": "{static: false}"
 							}
 						}
 					],
@@ -2183,7 +2185,7 @@
 						{
 							"fileName": "data-table/data-table/data-table.component.ts",
 							"line": 39,
-							"character": 26
+							"character": 43
 						}
 					],
 					"type": {
@@ -4189,7 +4191,7 @@
 						"typeArguments": [
 							{
 								"type": "intrinsic",
-								"name": "Object"
+								"name": "any"
 							}
 						]
 					},
