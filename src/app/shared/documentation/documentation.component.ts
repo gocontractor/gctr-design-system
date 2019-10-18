@@ -8,7 +8,7 @@ import {
   DataColumnMode,
   DataTableSettings
 } from 'projects/gctr-design-system/src/public_api';
-import { MatTableDataSource } from '@angular/material';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-documentation',

@@ -1,7 +1,9 @@
 import { Component, OnInit, AfterViewInit, Input, EventEmitter, Output, ViewChild, ViewChildren, QueryList } from '@angular/core';
 import { DataTableSettings } from '../models/data-column-settings';
 import { SelectionModel } from '@angular/cdk/collections';
-import { MatPaginator, MatSort, MatCheckbox, PageEvent, MatCheckboxChange } from '@angular/material';
+import { MatCheckbox, MatCheckboxChange } from '@angular/material/checkbox';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { DataColumnMode } from '../models/data-column-mode';
 import { DataColumnDefinition } from '../models/data-column-definition';
 
