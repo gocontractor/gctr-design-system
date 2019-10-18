@@ -35,7 +35,7 @@ export class GctrDataTableComponent<T> implements OnInit, AfterViewInit {
     this.selectionModelChange.emit(this._selectionModelValue);
   }
 
-  @ViewChild(MatPaginator, {static: false}) paginator: MatPaginator;
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: false}) sort: MatSort;
   @ViewChildren(MatCheckbox) checkboxes: QueryList<MatCheckbox>;
   private _itemsShown: T[];
