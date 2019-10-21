@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { ButtonComponent } from './button.component';
 import { IconComponent } from '../icon/icon.component';
-import { MatTooltipModule } from '@angular/material';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { DebugElement } from '@angular/core';
 
 describe('ButtonComponent', () => {

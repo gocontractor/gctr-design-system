@@ -20,27 +20,16 @@
   /* Main Primary Button */
   &.main.primary {
     @include button-main(var(--PMain), $PMain);
-    .mat-ripple-element {
-      background: rgba(255, 255, 255, 0.1);
-    }
   }
 
   /* Main Secondary Button */
   &.main.secondary {
     @include button-main(var(--SMain), $SMain);
-    .mat-ripple-element {
-      background: rgba(255, 255, 255, 0.1);
-    }
   }
 
   /* Stroke Primary Button */
   &.stroke.primary {
     @include button-stroke(var(--PMain), $PMain);
-    .mat-ripple-element {
-      background-color: $PMain;
-      background-color: var(--PMain);
-      opacity: 0.1;
-    }
     &:hover .mat-button-focus-overlay {
       background-color: $PMain;
       background-color: var(--PMain);
@@ -51,11 +40,6 @@
   /* Stroke Secondary Button */
   &.stroke.secondary {
     @include button-stroke(var(--SMain), $SMain);
-    .mat-ripple-element {
-      background-color: $SMain;
-      background-color: var(--SMain);
-      opacity: 0.1;
-    }
     &:hover .mat-button-focus-overlay {
       background-color: $SMain;
       background-color: var(--SMain);
@@ -75,9 +59,6 @@
     &[disabled]:hover,
     &[disabled][disabled]:hover {
       @include shadow-btn();
-    }
-    .mat-ripple-element {
-      background-color: rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -101,9 +82,6 @@
       color: $Disable;
       color: var(--Disable);
       cursor: default;
-    }
-    .mat-ripple-element {
-      background-color: rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -147,17 +125,11 @@
   /* Float Primary Button */
   &.float.primary {
     @include button-main(var(--PMain), $PMain);
-    .mat-ripple-element {
-      background: rgba(255, 255, 255, 0.1);
-    }
   }
 
   /* Float Secondary Button */
   &.float.secondary {
     @include button-main(var(--SMain), $SMain);
-    .mat-ripple-element {
-      background: rgba(255, 255, 255, 0.1);
-    }
   }
 
   /* Float Cancel Button */

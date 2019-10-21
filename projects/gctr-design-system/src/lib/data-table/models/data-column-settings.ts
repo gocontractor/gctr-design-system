@@ -1,5 +1,6 @@
 import { DataColumnDefinition } from './data-column-definition';
-import { MatTableDataSource, MatCheckboxChange } from '@angular/material';
+import { MatCheckboxChange } from '@angular/material/checkbox';
+import { MatTableDataSource } from '@angular/material/table';
 import { DataTableMenuItem } from './data-table-menu-item';
 
 export interface DataTableSettings<T> {
