@@ -17,7 +17,6 @@ import { ExampleModalComponent } from './example-modal/example-modal.component';
     ModalRoutingModule,
     GctrModalModule
   ],
-  providers: [{provide: OverlayContainer, useClass: FullscreenOverlayContainer}],
   entryComponents: [ExampleModalComponent]
 })
 export class ModalModule { }
