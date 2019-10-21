@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewChild, OnDestroy } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { MatDrawer } from '@angular/material';
+import { MatDrawer } from '@angular/material/sidenav';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
 export class ContentComponent implements OnInit, OnDestroy {
   smallScreen: boolean;
 
-  @ViewChild('drawer', {static: false}) drawer: MatDrawer;
+  @ViewChild('drawer', {static: true}) drawer: MatDrawer;
 
   breakpointsSubscription: Subscription;
 
