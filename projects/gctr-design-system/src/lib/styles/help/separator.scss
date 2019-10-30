@@ -7,6 +7,10 @@
   border-color: var(--Ripple);
   margin-left: -$spacing;
   margin-right: -$spacing;
+  &.small {
+    margin-left: -$spacing-half;
+    margin-right: -$spacing-half;
+  }
   &.big {
     margin-left: -$spacing-big;
     margin-right: -$spacing-big;
