@@ -32,4 +32,7 @@
 .loading-card-content {
   padding: $spacing;
   width: 100%;
+  &.small-padding {
+    padding: $spacing-half;    
+  }
 }
