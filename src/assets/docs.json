@@ -172,7 +172,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-action-bar',\n  templateUrl: './action-bar.component.html',\n  styleUrls: ['./action-bar.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-action-bar',\r\n  templateUrl: './action-bar.component.html',\r\n  styleUrls: ['./action-bar.component.scss']\r\n}"
 					}
 				}
 			],
@@ -421,7 +421,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-action-button',\n  templateUrl: './action-button.component.html',\n  styleUrls: ['./action-button.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-action-button',\r\n  templateUrl: './action-button.component.html',\r\n  styleUrls: ['./action-button.component.scss']\r\n}"
 					}
 				}
 			],
@@ -864,7 +864,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n}"
 					}
 				}
 			],
@@ -1502,7 +1502,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.scss']\r\n}"
 					}
 				}
 			],
@@ -1609,7 +1609,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-content',\n  templateUrl: './content.component.html',\n  styleUrls: ['./content.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-content',\r\n  templateUrl: './content.component.html',\r\n  styleUrls: ['./content.component.scss']\r\n}"
 					}
 				}
 			],
@@ -1757,7 +1757,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [CommonModule],\n  declarations: [ActionBarComponent],\n  exports: [ActionBarComponent]\n}"
+						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [ActionBarComponent],\r\n  exports: [ActionBarComponent]\r\n}"
 					}
 				}
 			],
@@ -1785,7 +1785,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [\n    CommonModule,\n    MatTooltipModule,\n    GctrIconModule\n  ],\n  declarations: [ActionButtonComponent],\n  exports: [ActionButtonComponent]\n}"
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatTooltipModule,\r\n    GctrIconModule\r\n  ],\r\n  declarations: [ActionButtonComponent],\r\n  exports: [ActionButtonComponent]\r\n}"
 					}
 				}
 			],
@@ -1813,7 +1813,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [\n    CommonModule,\n    MatButtonModule,\n    MatTooltipModule,\n    GctrIconModule\n  ],\n  declarations: [ButtonComponent],\n  exports: [ButtonComponent]\n}"
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatButtonModule,\r\n    MatTooltipModule,\r\n    GctrIconModule\r\n  ],\r\n  declarations: [ButtonComponent],\r\n  exports: [ButtonComponent]\r\n}"
 					}
 				}
 			],
@@ -1841,7 +1841,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [CommonModule],\n  declarations: [CardComponent],\n  exports: [CardComponent]\n}"
+						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [CardComponent],\r\n  exports: [CardComponent]\r\n}"
 					}
 				}
 			],
@@ -1869,7 +1869,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [CommonModule],\n  declarations: [ContentComponent],\n  exports: [ContentComponent]\n}"
+						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [ContentComponent],\r\n  exports: [ContentComponent]\r\n}"
 					}
 				}
 			],
@@ -1900,7 +1900,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-data-table',\n  templateUrl: './data-table.component.html',\n  styleUrls: ['./data-table.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-data-table',\r\n  templateUrl: './data-table.component.html',\r\n  styleUrls: ['./data-table.component.scss']\r\n}"
 					}
 				}
 			],
@@ -2924,7 +2924,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  declarations: [GctrDataTableComponent],\n  imports: [\n    CommonModule,\n    GctrButtonModule,\n    MatIconModule,\n    MatCheckboxModule,\n    MatMenuModule,\n    MatFormFieldModule,\n    MatPaginatorModule,\n    MatTableModule,\n    MatInputModule\n  ],\n  exports: [GctrDataTableComponent]\n}"
+						"obj": "{\r\n  declarations: [GctrDataTableComponent],\r\n  imports: [\r\n    CommonModule,\r\n    GctrButtonModule,\r\n    MatIconModule,\r\n    MatCheckboxModule,\r\n    MatMenuModule,\r\n    MatFormFieldModule,\r\n    MatPaginatorModule,\r\n    MatTableModule,\r\n    MatInputModule\r\n  ],\r\n  exports: [GctrDataTableComponent]\r\n}"
 					}
 				}
 			],
@@ -2952,7 +2952,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [\n    CommonModule,\n    GctrProgressBarModule\n  ],\n  declarations: [HeaderComponent],\n  exports: [HeaderComponent]\n}"
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    GctrProgressBarModule\r\n  ],\r\n  declarations: [HeaderComponent],\r\n  exports: [HeaderComponent]\r\n}"
 					}
 				}
 			],
@@ -2980,7 +2980,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [CommonModule, MatTooltipModule],\n  declarations: [IconComponent],\n  exports: [IconComponent]\n}"
+						"obj": "{\r\n  imports: [CommonModule, MatTooltipModule],\r\n  declarations: [IconComponent],\r\n  exports: [IconComponent]\r\n}"
 					}
 				}
 			],
@@ -3008,7 +3008,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [CommonModule, GctrCardModule, GctrProgressBarModule],\n  declarations: [LoadingCardComponent],\n  exports: [LoadingCardComponent]\n}"
+						"obj": "{\r\n  imports: [CommonModule, GctrCardModule, GctrProgressBarModule],\r\n  declarations: [LoadingCardComponent],\r\n  exports: [LoadingCardComponent]\r\n}"
 					}
 				}
 			],
@@ -3036,7 +3036,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [CommonModule, GctrIconModule],\n  declarations: [ModalComponent],\n  exports: [ModalComponent]\n}"
+						"obj": "{\r\n  imports: [CommonModule, GctrIconModule],\r\n  declarations: [ModalComponent],\r\n  exports: [ModalComponent]\r\n}"
 					}
 				}
 			],
@@ -3064,7 +3064,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [\n    CommonModule,\n    MdePopoverModule,\n    FormsModule,\n    GctrButtonModule\n  ],\n  declarations: [PopoverComponent],\n  exports: [PopoverComponent]\n}"
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MdePopoverModule,\r\n    FormsModule,\r\n    GctrButtonModule\r\n  ],\r\n  declarations: [PopoverComponent],\r\n  exports: [PopoverComponent]\r\n}"
 					}
 				}
 			],
@@ -3092,7 +3092,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [CommonModule],\n  declarations: [ProgressBarComponent],\n  exports: [ProgressBarComponent]\n}"
+						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [ProgressBarComponent],\r\n  exports: [ProgressBarComponent]\r\n}"
 					}
 				}
 			],
@@ -3120,7 +3120,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  declarations: [RatingComponent],\n  imports: [CommonModule, GctrIconModule],\n  exports: [RatingComponent]\n}"
+						"obj": "{\r\n  declarations: [RatingComponent],\r\n  imports: [CommonModule, GctrIconModule],\r\n  exports: [RatingComponent]\r\n}"
 					}
 				}
 			],
@@ -3148,7 +3148,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [CommonModule],\n  declarations: [SidenavComponent],\n  exports: [SidenavComponent]\n}"
+						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [SidenavComponent],\r\n  exports: [SidenavComponent]\r\n}"
 					}
 				}
 			],
@@ -3176,7 +3176,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [MatProgressSpinnerModule],\n  declarations: [SpinnerComponent],\n  exports: [SpinnerComponent]\n}"
+						"obj": "{\r\n  imports: [MatProgressSpinnerModule],\r\n  declarations: [SpinnerComponent],\r\n  exports: [SpinnerComponent]\r\n}"
 					}
 				}
 			],
@@ -3204,7 +3204,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-header',\r\n  templateUrl: './header.component.html',\r\n  styleUrls: ['./header.component.scss']\r\n}"
 					}
 				}
 			],
@@ -3352,7 +3352,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-icon',\r\n  templateUrl: './icon.component.html',\r\n  styleUrls: ['./icon.component.scss']\r\n}"
 					}
 				}
 			],
@@ -3737,7 +3737,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-loading-card',\n  templateUrl: './loading-card.component.html',\n  styleUrls: ['./loading-card.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-loading-card',\r\n  templateUrl: './loading-card.component.html',\r\n  styleUrls: ['./loading-card.component.scss']\r\n}"
 					}
 				}
 			],
@@ -4112,7 +4112,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-modal',\n  templateUrl: './modal.component.html',\n  styleUrls: ['./modal.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-modal',\r\n  templateUrl: './modal.component.html',\r\n  styleUrls: ['./modal.component.scss']\r\n}"
 					}
 				}
 			],
@@ -4495,7 +4495,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-popover',\n  templateUrl: './popover.component.html',\n  styleUrls: ['./popover.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-popover',\r\n  templateUrl: './popover.component.html',\r\n  styleUrls: ['./popover.component.scss']\r\n}"
 					}
 				}
 			],
@@ -4809,7 +4809,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-progress-bar',\n  templateUrl: './progress-bar.component.html',\n  styleUrls: ['./progress-bar.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-progress-bar',\r\n  templateUrl: './progress-bar.component.html',\r\n  styleUrls: ['./progress-bar.component.scss']\r\n}"
 					}
 				}
 			],
@@ -5070,7 +5070,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-rating',\n  templateUrl: './rating.component.html',\n  styleUrls: ['./rating.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-rating',\r\n  templateUrl: './rating.component.html',\r\n  styleUrls: ['./rating.component.scss']\r\n}"
 					}
 				}
 			],
@@ -5441,7 +5441,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-sidenav',\n  templateUrl: './sidenav.component.html',\n  styleUrls: ['./sidenav.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-sidenav',\r\n  templateUrl: './sidenav.component.html',\r\n  styleUrls: ['./sidenav.component.scss']\r\n}"
 					}
 				}
 			],
@@ -5552,7 +5552,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'gctr-spinner',\n  templateUrl: './spinner.component.html',\n  styleUrls: ['./spinner.component.scss']\n}"
+						"obj": "{\r\n  selector: 'gctr-spinner',\r\n  templateUrl: './spinner.component.html',\r\n  styleUrls: ['./spinner.component.scss']\r\n}"
 					}
 				}
 			],
