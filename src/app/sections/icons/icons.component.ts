@@ -32,6 +32,7 @@ export class IconsComponent implements OnInit {
   }
 
   getIcons() {
+    this.iconsList.push(this.iconsService.getIcons('glogo', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('add', ''));
     this.iconsList.push(this.iconsService.getIcons('add_to_queue', ''));
     this.iconsList.push(this.iconsService.getIcons('arrow_drop_down', ''));
@@ -51,7 +52,6 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('delete', ''));
     this.iconsList.push(this.iconsService.getIcons('description', ''));
     this.iconsList.push(this.iconsService.getIcons('done', ''));
-    this.iconsList.push(this.iconsService.getIcons('dotlogo', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('downward', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('drafts', ''));
     this.iconsList.push(this.iconsService.getIcons('drag_handle', ''));
