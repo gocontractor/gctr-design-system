@@ -1,6 +1,7 @@
 @import "../imports/variables";
 
-body, button {
+body,
+button {
   color: $Grey;
 }
 
@@ -182,24 +183,22 @@ body, button {
   border-color: #ffffff;
 }
 
-.lightIconWithHover {
-  color: rgba(0, 0, 0, 0.26);
+.blue-light-bgcolor {
+  background: $BlueLight;
 }
 
-.lightIconWithHover:hover {
-  color: rgba(0, 0, 0, 0.54);
-}
-
-.bg-transparent {
-  background-color: transparent;
+.blue-dark-bgcolor {
+  background: $BlueDark;
 }
 
 /* Standards */
-.bg-hover, .bg-hover-hover:hover {
+.bg-hover,
+.bg-hover-hover:hover {
   background: $Hover;
 }
 
-.bg-std, .bg-std-hover:hover {
+.bg-std,
+.bg-std-hover:hover {
   background-color: $BackgroundDefault;
 }
 
