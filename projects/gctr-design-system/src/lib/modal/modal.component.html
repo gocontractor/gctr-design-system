@@ -4,7 +4,7 @@
       <gctr-icon icon="close"></gctr-icon>
     </div>
     <div class="gctr-modal-content">
-      <div class="flex justify-content-center column full-height">
+      <div class="flex column full-height" [ngClass]="modalContentPosition">
         <ng-content></ng-content>
       </div>
     </div>

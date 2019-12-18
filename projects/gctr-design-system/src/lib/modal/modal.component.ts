@@ -11,6 +11,7 @@ import { filter } from 'rxjs/operators';
 export class ModalComponent implements OnInit, OnDestroy {
   @Input() overlay = false;
   @Input() hideCloseButton = false;
+  @Input() justifyInternalContent ? = 'center';
   @Input() size: 'regular' | 'full' = 'regular';
   @Output() close = new EventEmitter();
   private routerSubscription: Subscription;
@@ -23,6 +24,10 @@ export class ModalComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.routerSubscription.unsubscribe();
+  }
+
+  get modalContentPosition(): string {
+    return `justify-content-${this.justifyInternalContent}`;
   }
 
   private subscribeRouterEvents(): void {
