@@ -46,7 +46,7 @@ export class IconComponent implements OnInit {
         classes = 'material-icons';
       }
     }
-    return classes + ' ' + this.cssClass;
+    return classes + ' ' + 'notranslate ' + ' ' + this.cssClass;
   }
 
   get showText() {
