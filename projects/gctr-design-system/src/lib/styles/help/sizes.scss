@@ -36,24 +36,16 @@
   }
 }
 
-.width-100-pc {
-  width: 100%;
-}
-
-.width-50-pc {
-  width: 50%;
-}
-
-.max-width-100-pc {
-  max-width: 100%;
-}
-
-.max-width-90-pc {
-  max-width: 90%;
-}
-
-.max-width-50-pc {
-  max-width: 50%;
+@for $i from 1 through 100 {
+  .width-#{$i}-pc {
+    width: percentage($i / 100);
+  }
+  .max-width-#{$i}-pc {
+    max-width: percentage($i / 100);
+  }
+  .min-width-#{$i}-pc {
+    min-width: percentage($i / 100);
+  }
 }
 
 .max-width-1024 {
