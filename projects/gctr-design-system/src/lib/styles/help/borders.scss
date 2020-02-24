@@ -1,3 +1,5 @@
+@import "../imports/variables";
+
 @for $i from 1 through 5 {
   .border-solid-#{$i} { border-width: #{$i}px; border-style: solid; }
   .border-top-solid-#{$i} { border-top-width: #{$i}px; border-top-style: solid; }
@@ -36,4 +38,16 @@
 
 .border-left-0 {
   border-left: none;
+}
+
+.rag-red-border-left {
+  border-left: 8px solid $RagRed;
+}
+
+.rag-green-border-left {
+  border-left: 8px solid $RagGreen;
+}
+
+.rag-amber-border-left {
+  border-left: 8px solid $RagAmber;
 }

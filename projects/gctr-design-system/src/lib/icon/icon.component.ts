@@ -10,7 +10,7 @@ export class IconComponent implements OnInit {
   @Input() icon = '';
   @Input() iconFont: 'gctr' | 'glyphicon' | 'font-awesome-brand'
     | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
-  @Input() size: 'smaller' | 'small' | 'medium' | 'big' = 'small';
+  @Input() size: 'smaller' | 'small' | 'small-meduim' | 'medium' | 'big' = 'small';
   @Input() cssClass = '';
   @Input() tooltip = '';
 
