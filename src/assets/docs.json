@@ -3611,6 +3611,10 @@
 							},
 							{
 								"type": "stringLiteral",
+								"value": "small-meduim"
+							},
+							{
+								"type": "stringLiteral",
 								"value": "medium"
 							},
 							{

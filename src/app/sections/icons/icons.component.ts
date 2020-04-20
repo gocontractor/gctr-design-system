@@ -117,5 +117,6 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('bottom-empty', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('bottom-full', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('bottom-half', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('qual-card', 'gctr'));
   }
 }
