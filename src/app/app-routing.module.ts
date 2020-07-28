@@ -20,17 +20,17 @@ import { HeaderComponent } from './sections/header/header.component';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: './sections/dashboard/dashboard.module#DashboardModule',
+    loadChildren: () => import('./sections/dashboard/dashboard.module').then(m => m.DashboardModule),
     pathMatch: 'full',
   },
   {
     path: 'loading-card',
-    loadChildren: './sections/loading-card/loading-card.module#LoadingCardModule',
+    loadChildren: () => import('./sections/loading-card/loading-card.module').then(m => m.LoadingCardModule),
     pathMatch: 'full',
   },
   {
     path: 'modal',
-    loadChildren: './sections/modal/modal.module#ModalModule',
+    loadChildren: () => import('./sections/modal/modal.module').then(m => m.ModalModule),
     pathMatch: 'full',
   },
   { path: 'actions', component: ActionsComponent },

@@ -9,7 +9,7 @@ import { ClipboardService } from 'src/app/core/clipboard/clipboard.service';
 })
 export class CodeComponent implements OnInit {
   @Input() title: string;
-  @ViewChild('markdown', {static: false}) markdown: MarkdownComponent;
+  @ViewChild('markdown') markdown: MarkdownComponent;
 
   constructor(private clipboard: ClipboardService) {}
 
