@@ -6,7 +6,7 @@
     "url": "https://github.com/gocontractor/gctr-design-system.git"
   },
   "homepage": "https://github.com/gocontractor/gctr-design-system/",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "ng-packagr -p package.json",
     "postbuild": "gulp"
