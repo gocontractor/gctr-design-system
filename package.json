@@ -11,7 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "gulp": "gulp",
-    "build-lib": "ng build gctr-design-system && cd projects/gctr-design-system && gulp",
+    "build-lib": "ng build --prod gctr-design-system && cd projects/gctr-design-system && gulp",
     "publish-lib": "cd dist/gctr-design-system && npm publish",
     "npm-pack": "cd dist/gctr-design-system && npm pack",
     "docs": "typedoc --exclude *.scss --exclude *.html --exclude *.spec.ts --mode file --json src/assets/docs.json ./projects/gctr-design-system/src/lib/"
