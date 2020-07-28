@@ -1,5 +1,7 @@
 import { Buttons } from '../models/buttons';
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class ButtonsService {
     public getButtons(design, color, label = ''): Array<Buttons> {
         const buttons = [
