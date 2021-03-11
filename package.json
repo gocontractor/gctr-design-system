@@ -30,7 +30,7 @@
     "@angular/router": "~9.1.12",
     "@material-extended/mde": "^2.3.1",
     "core-js": "^2.5.4",
-    "ngx-markdown": "^9.1.1",
+    "ngx-markdown": "^11.1.2",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
