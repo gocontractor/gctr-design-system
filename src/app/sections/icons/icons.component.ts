@@ -56,16 +56,16 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('drafts', ''));
     this.iconsList.push(this.iconsService.getIcons('drag_handle', ''));
     this.iconsList.push(this.iconsService.getIcons('edit', ''));
-    this.iconsList.push(this.iconsService.getIcons('equalizer', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('equalizer', ''));
     this.iconsList.push(this.iconsService.getIcons('error', ''));
     this.iconsList.push(this.iconsService.getIcons('expand_more', ''));
     this.iconsList.push(this.iconsService.getIcons('file_copy', ''));
     this.iconsList.push(this.iconsService.getIcons('filter_list', ''));
     this.iconsList.push(this.iconsService.getIcons('format_size', ''));
-    this.iconsList.push(this.iconsService.getIcons('help_outline', 'material-outlined'));
-    this.iconsList.push(this.iconsService.getIcons('home', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('help', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('home', ''));
     this.iconsList.push(this.iconsService.getIcons('image', ''));
-    this.iconsList.push(this.iconsService.getIcons('important_devices', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('important_devices', ''));
     this.iconsList.push(this.iconsService.getIcons('insert_invitation', ''));
     this.iconsList.push(this.iconsService.getIcons('keyboard_arrow_left', ''));
     this.iconsList.push(this.iconsService.getIcons('keyboard_backspace', ''));
@@ -73,7 +73,7 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('local_activity', ''));
     this.iconsList.push(this.iconsService.getIcons('location_on', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('mail', ''));
-    this.iconsList.push(this.iconsService.getIcons('mail_outline', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('mail', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('menu', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('monetization_on', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('more_vert', ''));
@@ -89,7 +89,7 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('publish', ''));
     this.iconsList.push(this.iconsService.getIcons('qualification', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('radio_button_checked', ''));
-    this.iconsList.push(this.iconsService.getIcons('remove_circle_outline', ''));
+    this.iconsList.push(this.iconsService.getIcons('remove_circle', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('settings', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('settings_backup_restore', ''));
     this.iconsList.push(this.iconsService.getIcons('save', ''));
@@ -118,5 +118,10 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('bottom-full', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('bottom-half', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('qual-card', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('verified_user', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('assignment_ind', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('history_edu', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('restore', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('fact_check', 'material-outlined'));
   }
 }

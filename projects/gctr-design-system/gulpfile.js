@@ -14,7 +14,6 @@ gulp.task('css', gulp.series((done) => {
     gulp.src([
         "src/lib/styles/imports/fonts.scss",
         "src/lib/styles/imports/gctr-font.scss",
-        "src/lib/styles/imports/material-outlined.scss",
         "src/lib/styles/imports/animations.scss",
         "src/lib/styles/imports/colors.scss",
         "src/lib/styles/sass/*.scss",
