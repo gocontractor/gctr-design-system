@@ -69,7 +69,7 @@ export class IconComponent implements OnInit {
         break;
       }
       case 'material-outlined': {
-        shouldShow = false;
+        shouldShow = true;
         break;
       }
       default: {
