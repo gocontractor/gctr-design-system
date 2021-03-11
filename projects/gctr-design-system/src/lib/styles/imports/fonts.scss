@@ -1,22 +1,11 @@
 /* Proxima Nova */
-@import url('https://use.typekit.net/kdl4evh.css');
+@import url('https://use.typekit.net/sev7sxx.css');
 
 /* Font Awesome Icons */
 @import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 
-/* Material Icons */
-@import url('https://fonts.googleapis.com/css?family=Material+Icons');
-
-@font-face {
-    font-family: 'Material Icons Outlined';
-    src:    url('material-outlined.eot');
-    src:    url('material-outlined.eot?#iefix') format('embedded-opentype'),
-            url('material-outlined.ttf') format('truetype'),
-            url('material-outlined.woff') format('woff'),
-            url('material-outlined.svg#material-outlined') format('svg');
-            font-weight: normal;
-            font-style: normal;
-  }
+/* Material Icons (standard and outlined) */
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined');
 
 /* Gctr Icons */
 @font-face {
