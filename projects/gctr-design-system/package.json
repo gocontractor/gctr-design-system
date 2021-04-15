@@ -11,6 +11,9 @@
     "build": "ng-packagr -p package.json",
     "postbuild": "gulp"
   },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "peerDependencies": {
     "@angular/material": "^9.2.4",
     "@angular/common": "^9.1.12",
