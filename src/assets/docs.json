@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "@gocontractor/gctr-design-system - v1.0.1",
+	"name": "@gocontractor/gctr-design-system - v2.0.0",
 	"kind": 0,
 	"flags": {},
 	"children": [
@@ -3419,7 +3419,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'gctr-icon',\r\n  templateUrl: './icon.component.html',\r\n  styleUrls: ['./icon.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss']\n}"
 					}
 				}
 			],
