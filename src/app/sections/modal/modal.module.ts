@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OverlayModule, FullscreenOverlayContainer, OverlayContainer } from '@angular/cdk/overlay';
+import { OverlayModule} from '@angular/cdk/overlay';
 
 import { ModalRoutingModule } from './modal-routing.module';
 import { ModalDocumentationComponent } from './modal.component';
@@ -16,7 +16,6 @@ import { ExampleModalComponent } from './example-modal/example-modal.component';
     OverlayModule,
     ModalRoutingModule,
     GctrModalModule
-  ],
-  entryComponents: [ExampleModalComponent]
+  ]
 })
 export class ModalModule { }
